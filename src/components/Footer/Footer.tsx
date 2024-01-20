@@ -17,11 +17,11 @@ export const Footer = () => {
 
                 <div className="right flex flex-col items-center gap-2 mt-24" >
                     <h3 className="font-bold mr-auto">Get the app</h3>
-                    <Button className="bg-white w-[80vw]">
+                    <Button className="bg-white w-[80vw] max-w-[240px]">
                         <img width={20} src="https://demos.creative-tim.com/nextjs-tailwind-app-presentation-page/logos/logo-google.png" alt="" />
                         Android
                     </Button >
-                    <Button className="bg-white w-[80vw] ">
+                    <Button className="bg-white w-[80vw] max-w-[240px]">
                         IOS
                     </Button>
                 </div>
