@@ -1,13 +1,9 @@
 import React from "react";
 // @ts-ignore:
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link,  NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@nextui-org/react";
-// import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-
-
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
