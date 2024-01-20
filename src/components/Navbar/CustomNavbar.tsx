@@ -1,5 +1,4 @@
 import React from "react";
-// @ts-ignore:
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link,  NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@nextui-org/react";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
@@ -17,7 +16,6 @@ export default function App() {
         />
         <NavbarBrand>
           {/* <AcmeLogo />/ */}
-           {/* @ts-ignore: */}
           <p className="font-bold text-inherit">GNDEC ATHLETIX</p>
         </NavbarBrand>
       </NavbarContent>
