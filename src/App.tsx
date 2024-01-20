@@ -1,4 +1,4 @@
-import CustomNavbar from "./CustomNavbar";
+import CustomNavbar from "./components/Navbar/CustomNavbar";
 
 
 function App() {
