@@ -4,6 +4,7 @@ import React from "react";
 import { Image } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import Android from "../../assets/Device Android FS (1).png";
+import { FaApple } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   return (
@@ -26,7 +27,8 @@ const Hero: React.FC = () => {
                         Android
                     </Button>
                     <Button className="w-[80vw] md:w-fit px-8 text-white max-w-[240px] " color='primary' variant="shadow">
-                        <img width={20} src="https://demos.creative-tim.com/nextjs-tailwind-app-presentation-page/logos/logo-google.png" alt="" />
+                        {/* <img width={20} src={FaApple} alt="" /> */}
+                        <FaApple size={21}/>
                         IOS
                     </Button>
           </div>

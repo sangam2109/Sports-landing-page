@@ -1,4 +1,5 @@
 import { Button } from "@nextui-org/react"
+import { FaApple } from "react-icons/fa"
 
 export const Footer = () => {
 
@@ -22,6 +23,7 @@ export const Footer = () => {
                         Android
                     </Button >
                     <Button className="bg-white w-[80vw] max-w-[240px]">
+                     <FaApple size={21}/>
                         IOS
                     </Button>
                 </div>
