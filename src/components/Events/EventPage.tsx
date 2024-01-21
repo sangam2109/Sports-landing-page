@@ -31,7 +31,7 @@ export default function App() {
                 5. Keep watching Announcements for live updates of sports.<br />
                 </li>
               </ul>
-              <iframe src="https://www.youtube-nocookie.com/embed/-mgGnx1p3b8?modestbranding=1&rel=0&iv_load_policy=3&color=white&disablekb=1" className="w-full" height="315" title="A YouTube video" frameBorder="0" allowfullscreen></iframe>
+              <iframe src="https://www.youtube-nocookie.com/embed/-mgGnx1p3b8?modestbranding=1&rel=0&iv_load_policy=3&color=white&disablekb=1" className="w-full" height="315" title="A YouTube video" frameBorder="0" allowFullScreen></iframe>
             </CardBody>
           </Card>
         </Tab>

@@ -1,11 +1,13 @@
 // components/Hero.tsx
 
 import React from "react";
+import { Image } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
+import Android from "../../assets/Device Android FS (1).png";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-gray-900 py-16 px-4 h-[80vh]">
+    <div className="bg-gray-900 py-16 px-4 h-[-webkit-fill-available]">
       <div className="container mx-auto flex flex-col items-center md:flex-row  ">
         {/* Left Section */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
@@ -35,15 +37,32 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2">
-          {/* Replace 'your_image_path' with the actual path of your UI images */}
-          {/* <Image
-            src="/your_image_path.png"
-            alt="App UI"
-            width={400}
-            height={400}
-            className="rounded"
-          /> */}
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          {/* First Image */}
+          <div className="p-4 mx-auto max-w-md mb-4">
+            <Image
+              isBlurred
+              isZoomed
+              src={Android}
+              alt="App UI"
+              width={200}
+              height={200}
+              className="rounded"
+            />
+          </div>
+
+          {/* Second Image */}
+          <div className="p-4 mx-auto max-w-md">
+            <Image
+              isBlurred
+              isZoomed
+              src={Android}
+              alt="App UI"
+              width={200}
+              height={200}
+              className="rounded"
+            />
+          </div>
         </div>
       </div>
     </div>
