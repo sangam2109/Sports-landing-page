@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         {/* Left Section */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
           <h1 className="text-4xl font-bold text-white mb-4">
-            Gndec Athletix App
+            Gndec Athletix
           </h1>
           <p className="text-gray-300 mb-4">
             Elevate your athletic experience with the Gndec Athletix App. Track
