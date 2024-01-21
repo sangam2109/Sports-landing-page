@@ -1,0 +1,8 @@
+#EventSection{
+    background: url('src/assets/ATHLETE1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center !important;
+    background-attachment: fixed;
+
+}

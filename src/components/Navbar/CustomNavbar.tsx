@@ -1,6 +1,6 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link,  NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@nextui-org/react";
-
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link,  NavbarMenu, NavbarMenuItem, NavbarMenuToggle, Image} from "@nextui-org/react";
+import GndecAthletix from '../../assets/favicon.png'
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
@@ -11,8 +11,8 @@ export default function App() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          {/* <AcmeLogo />/ */}
-          <p className="font-bold text-inherit">GNDEC ATHLETIX</p>
+          <Image src={GndecAthletix} width={45  } />
+          <p className="font-bold text-inherit ml-4">GNDEC ATHLETIX</p>
         </NavbarBrand>
       </NavbarContent>
 

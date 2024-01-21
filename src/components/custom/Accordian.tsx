@@ -4,9 +4,9 @@ export default function CustAccordion({title, content }: { title: string, conten
   const defaultContent = content
 
   return (
-    <Accordion  defaultExpandedKeys={["1"]}>
+    <Accordion className="bg-[#f1f1f1]"  defaultExpandedKeys={["1"]}>
       <AccordionItem
-      className=""
+        className="bg-[#f1f1f1]"
         key="2"
         aria-label={title}
         title={title}

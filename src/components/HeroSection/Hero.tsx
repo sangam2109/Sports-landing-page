@@ -18,29 +18,26 @@ const Hero: React.FC = () => {
             Elevate your athletic experience with the Gndec Athletix App. Track
             your progress, set goals, and stay connected with the community.
           </p>
-          <div className="flex flex-col md:flex-row md:space-x-4">
-            <Button
-              color="primary"
-              variant="shadow"
-              className="w-full md:w-auto mb-4 md:mb-0"
-            >
-              Android Users
-            </Button>
-            <Button
-              color="secondary"
-              variant="shadow"
-              className="w-full md:w-auto"
-            >
-              iOS Users
-            </Button>
+          {/* <div className="flex flex-col md:flex-row md:space-x-4"> */}
+                    <h3 className="font-bold  text-white opacity-90 mt-8">Get the app</h3>
+          <div className="flex flex-col justify-center items-center  md:flex-row gap-2 mt-2" >
+                    <Button className="w-[80vw] md:w-fit px-8 text-white max-w-[240px]" variant="bordered">
+                        <img width={20} src="https://demos.creative-tim.com/nextjs-tailwind-app-presentation-page/logos/logo-google.png" alt="" />
+                        Android
+                    </Button>
+                    <Button className="w-[80vw] md:w-fit px-8 text-white max-w-[240px] " color='primary' variant="shadow">
+                        <img width={20} src="https://demos.creative-tim.com/nextjs-tailwind-app-presentation-page/logos/logo-google.png" alt="" />
+                        IOS
+                    </Button>
           </div>
+          {/* </div> */}
         </div>
 
         {/* Right Section */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
           {/* First Image */}
-          <div className="p-4 mx-auto max-w-md mb-4">
-            <Image
+          {/* <div className="p-4 mx-auto max-w-md mb-4">
+            {/* <Image
               isBlurred
               isZoomed
               src={Android}
@@ -48,8 +45,8 @@ const Hero: React.FC = () => {
               width={200}
               height={200}
               className="rounded"
-            />
-          </div>
+            /> */}
+          {/* </div>  */}
 
           {/* Second Image */}
           <div className="p-4 mx-auto max-w-md">
@@ -60,7 +57,7 @@ const Hero: React.FC = () => {
               alt="App UI"
               width={200}
               height={200}
-              className="rounded"
+              className="rounded m-auto block"
             />
           </div>
         </div>

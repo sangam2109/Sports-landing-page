@@ -14,6 +14,7 @@ function App() {
       <CustomNavbar/>
       <Hero/>
       <EventList />
+      <DevTeam/>
       <FAQ/>
       <Footer/>
     </>
