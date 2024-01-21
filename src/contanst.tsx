@@ -1,0 +1,43 @@
+export const MaleEvents = {
+    "events": [
+        "Tug Of War",
+        "100 mts",
+        "200 mts",
+        "400 mts",
+        "800 mts",
+        "1500 mts",
+        "5000 mts",
+        "10000 mts",
+        "110 mts Hurdles",
+        "400 mts Hurdles",
+        "4*400 mts Relay",
+        "4*100 mts Relay",
+        "long jump",
+        "Triple Jump",
+        "High Jump",
+        "Shot Put",
+        "Discus Throw",
+        "Javelin Throw",
+        "Hammer Throw"
+      ]
+}
+export const FemaleEvents = {
+    "events": [
+        "Tug Of War",
+        "100 mts",
+        "200 mts",
+        "400 mts",
+        "800 mts",
+        "1500 mts",
+        "3000 mts",
+        "100 mts Hurdles",
+        "4*400 mts Relay",
+        "4*100 mts Relay",
+        "long jump",
+        "Triple Jump",
+        "High Jump",
+        "Shot Put",
+        "Discus Throw",
+        "Javelin Throw"
+      ]
+}

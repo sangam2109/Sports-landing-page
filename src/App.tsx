@@ -13,8 +13,7 @@ function App() {
     <>
       <CustomNavbar/>
       <Hero/>
-      <EventList gender={"Male"}/>
-      <DevTeam/>
+      <EventList />
       <FAQ/>
       <Footer/>
     </>
