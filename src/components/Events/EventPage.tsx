@@ -21,7 +21,7 @@ export default function App() {
             </div>
           }
         >
-          <Card className="w-[95vw] md:w-[50vw] m-auto bg-opacity-80"  >
+          <Card className="w-[95vw] md:w-[80vw] m-auto bg-opacity-80"  >
             <CardBody className="">
               <h1 className="text-2xl font-semibold">Welcome to Athletic Meet 2024</h1>
               <p className="opacity-80 pt-2">We're excited to have you join the GNDEC Athletic Meet 2024, where we celebrate sports, teamwork, and fun!</p>
