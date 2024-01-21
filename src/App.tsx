@@ -1,3 +1,4 @@
+import DevTeam from "./components/Dev Team/DevTeam";
 import EventList from "./components/Events/EventPage";
 import { FAQ } from "./components/Faq/Faq";
 import { Footer } from "./components/Footer/Footer";
@@ -13,6 +14,7 @@ function App() {
       <CustomNavbar/>
       <Hero/>
       <EventList gender={"Male"}/>
+      <DevTeam/>
       <FAQ/>
       <Footer/>
     </>
