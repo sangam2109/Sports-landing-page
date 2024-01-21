@@ -1,7 +1,7 @@
 // EventList.tsx
 
 import React, { useEffect, useState } from "react";
-import eventData from "../../Data/EventList.json"; // Import the JSON data
+import eventData from "../../Data/EventList.json"; 
 
 interface EventListProps {
   gender: "Male" | "Female";

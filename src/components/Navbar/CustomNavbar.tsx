@@ -22,9 +22,14 @@ export default function App() {
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+        <NavbarItem>
+          <Link color="foreground" href="#" aria-current="page">
             Event
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground"  href="#" aria-current="page">
+            Dev Team
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -43,6 +48,11 @@ export default function App() {
         <NavbarMenuItem>
           <Link className="w-full" href="#" size="lg">
             Events
+          </Link>
+        </NavbarMenuItem>
+         <NavbarMenuItem>
+          <Link className="w-full" href="#" size="lg">
+            Dev Team
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
