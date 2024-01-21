@@ -4,7 +4,7 @@ import GndecAthletix from '../../assets/favicon.png'
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#111827] text-[#ffffffe3]">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -16,7 +16,7 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4 bg-[#1118276e]" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Home
@@ -39,24 +39,24 @@ export default function App() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="bg-[#1118276e] ">
         <NavbarMenuItem>
-          <Link className="w-full" href="#" size="lg">
+          <Link className="w-full text-[#ffffffe3] mt-4 block text-center " href="#" size="lg">
             Home
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="w-full" href="#" size="lg">
+          <Link className="w-full text-[#ffffffe3] mt-4 block text-center" href="#" size="lg">
             Events
           </Link>
         </NavbarMenuItem>
          <NavbarMenuItem>
-          <Link className="w-full" href="#" size="lg">
+          <Link className="w-full text-[#ffffffe3] mt-4 block text-center" href="#" size="lg">
             Dev Team
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="w-full" href="#" size="lg">
+          <Link className="w-full text-[#ffffffe3] mt-4 block text-center" href="#" size="lg">
             Contact Us
           </Link>
         </NavbarMenuItem>

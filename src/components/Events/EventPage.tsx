@@ -21,7 +21,7 @@ export default function App() {
             </div>
           }
         >
-          <Card className="w-[95vw] md:w-[80vw] m-auto bg-opacity-80"  >
+          <Card className="w-[95vw] md:w-[80vw] max-w-[900px] m-auto bg-opacity-80"  >
             <CardBody className="">
               <h1 className="text-2xl font-semibold">Welcome to Athletic Meet 2024</h1>
               <p className="opacity-80 pt-2">We're excited to have you join the GNDEC Athletic Meet 2024, where we celebrate sports, teamwork, and fun!</p>
@@ -56,8 +56,8 @@ export default function App() {
             </div>
           }
         >
-          <Card className="w-[95vw] md:w-[80vw] opacity-80">
-            <CardBody>
+          <Card className="w-[95vw] mx-auto md:w-[80vw] opacity-80">
+            <CardBody className="">
               <h1 className="text-2xl font-semibold">List of Events</h1>
               <div className="pt-8 pb-4 flex items-center justify-between">
                 <div className="flex items-center justify-center space-x-2 w-1/2">
@@ -109,7 +109,7 @@ export default function App() {
           }
         >
 
-        <Card className="w-[95vw] md:w-[80vw] opacity-80">
+        <Card className="w-[95vw] mx-auto md:w-[80vw] opacity-80">
           <CardBody>
             <h1 className="text-2xl font-semibold">Welcome to our Help Section!</h1>
             <p className="p-2">We're here to assist you and ensure you have the best experience with GNDEC ATHLETIX. <br /> 
