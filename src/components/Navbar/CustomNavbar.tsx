@@ -16,24 +16,24 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4 bg-[#1118276e]" justify="center">
+      <NavbarContent className="hidden sm:flex gap-8 bg-[#1118276e] " justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className="text-inherit" href="#">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" aria-current="page">
+          <Link color="foreground" className="text-inherit" href="#" aria-current="page">
             Event
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground"  href="#" aria-current="page">
+          <Link color="foreground" className="text-inherit"  href="#" aria-current="page">
             Dev Team
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" className="text-inherit" href="#">
             Contact Us
           </Link>
         </NavbarItem>
