@@ -1,8 +1,15 @@
 import React from "react";
-import { Card, CardFooter, Image, CardHeader, CardBody, Button } from "@nextui-org/react";
-import { FiGithub, FiLinkedin,FiGlobe} from "react-icons/fi";
-import Sangam from '../../assets/Sangam.png'
-import './DevTeam.css'
+import {
+  Card,
+  CardFooter,
+  Image,
+  CardHeader,
+  CardBody,
+  Button,
+} from "@nextui-org/react";
+import { FiGithub, FiLinkedin, FiGlobe } from "react-icons/fi";
+import Sangam from "../../assets/Sangam.png";
+import "./DevTeam.css";
 
 // Sample data for team members
 const teamMembers = [
@@ -37,31 +44,30 @@ const DevTeam: React.FC = () => {
   return (
     <div className=" flex flex-wrap justify-center gap-4">
       {teamMembers.map((member, index) => (
-        <div key={index} className=" max-content ">
+        <div key={index} className=" max-content m-4 ">
           <Card
             isFooterBlurred
             isPressable
-            isHoverable
             radius="lg"
-            className=" border-none relative"
+            className=" border-none relative "
           >
-            <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-              <h2 className="text-tiny uppercase font-bold">{member.name}</h2>
-            </CardHeader>
-            <CardBody>
+            <CardBody className="items-center">
               <Image
                 alt={`Team Member ${index + 1}`}
                 className="object-cover"
-                height={300}
+                height={150}
                 src={member.personImage.Sangam} // Use the personImage property
-                width={300}
+                width={200}
               />
             </CardBody>
-            <CardFooter className="flex flex-col items-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)]  ml-1 z-10">
-              <h3 className="text-tiny text-white/80 mb-1 font-bold">
+            <CardHeader className="pb-0 pt-1 flex-col items-center">
+              <h2 className="text-lg uppercase font-bold">{member.name}</h2>
+            </CardHeader>
+            <CardFooter className="pb-0 flex-col items-center">
+              <h3 className="text-sm ">
                 {member.description}
               </h3>
-              <div className="flex space-x-2">
+              <div className="flex mt-2 items-center space-x-2">
                 <Button
                   as="a"
                   href={member.github}
@@ -73,7 +79,7 @@ const DevTeam: React.FC = () => {
                   radius="lg"
                   size="sm"
                 >
-                  <FiGithub size={16} />
+                  <FiGithub size={14} />
                 </Button>
 
                 <Button
@@ -87,7 +93,7 @@ const DevTeam: React.FC = () => {
                   radius="lg"
                   size="sm"
                 >
-                  <FiGlobe size={16} />
+                  <FiGlobe size={14} />
                 </Button>
                 <Button
                   as="a"
@@ -100,7 +106,7 @@ const DevTeam: React.FC = () => {
                   radius="lg"
                   size="sm"
                 >
-                  <FiLinkedin size={16} />
+                  <FiLinkedin size={14} />
                 </Button>
               </div>
             </CardFooter>
