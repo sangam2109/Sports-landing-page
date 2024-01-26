@@ -1,13 +1,22 @@
-import {Accordion, AccordionItem} from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+import { FaPlus } from "react-icons/fa6";
+import { TbMinusVertical } from "react-icons/tb";
 
-export default function CustAccordion({title, content }: { title: string, content:string }) {
-  const defaultContent = content
+export default function CustAccordion({
+  title,
+  content,
+}: {
+  title: string;
+  content: string;
+}) {
+  const defaultContent = content;
 
   return (
-    <Accordion className="bg-[#f1f1f1]"  defaultExpandedKeys={["1"]}>
+    <Accordion variant="splitted" defaultExpandedKeys={["1"]}>
       <AccordionItem
-        className="bg-[#f1f1f1]"
+        className="bg-[#f1f1f1] m-1 "
         key="2"
+        indicator={({ isOpen }) => (isOpen ? <TbMinusVertical /> : <FaPlus />)}
         aria-label={title}
         title={title}
       >
