@@ -8,7 +8,7 @@ import { FaApple } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-gray-900 px-4 h-[-webkit-fill-available]">
+    <div className="bg-gray-900 px-4 pb h-[-webkit-fill-available]">
       <div className="container mx-auto flex flex-col-reverse items-center md:flex-row  ">
         {/* Left Section */}
         <div className="w-full pt-8 mt-8 md:w-1/2 flex justify-center items-center">
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         </div>
 
          {/* Right Section */}
-        <div className="flex flex-col md:flex-col md:space-x-4">
+        <div className="flex flex-col md:flex-col items-center ">
           <h3 className="font-bold text-4xl text-white text-xl opacity-90 mt-12">
             Download the app
           </h3>

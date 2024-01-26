@@ -113,7 +113,7 @@ export default function App() {
           <CardBody>
             <h1 className="text-2xl font-semibold">Welcome to our Help Section!</h1>
             <p className="p-2">We're here to assist you and ensure you have the best experience with GNDEC ATHLETIX. <br /> 
-             If you have any questions, concerns, or need help, you're in the right place. Feel free to explore the resources below or reach out to us directly through the <a className="text-primary" href=""> contact form.</a> Your satisfaction is our priority!</p>
+             If you have any questions, concerns, or need help, you're in the right place. Feel free to explore the resources below or reach out to us directly through the <a className="text-primary" href="https://forms.gle/qk4VsemLMHnNDH6j9"> contact form.</a> Your satisfaction is our priority!</p>
              <h3 className="text-lg mt-4">For quick help, check out our <a href="#FAQ" className="text-primary">FAQs Section!</a> </h3>
           </CardBody>
         </Card>

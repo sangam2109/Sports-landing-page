@@ -37,6 +37,14 @@ const teamMembers = [
     portfolio: "https://www.portfolio.com/janesmith/",
     personImage: { Sangam }, // Adjust image path accordingly
   },
+  {
+    name: "Inderpreet Singh",
+    description: "Full Stack Developer",
+    linkedin: "https://www.linkedin.com/in/janesmith/",
+    github: "https://github.com/janesmith",
+    portfolio: "https://www.portfolio.com/janesmith/",
+    personImage: { Sangam }, // Adjust image path accordingly
+  },
   // Add more team members as needed
 ];
 
@@ -67,13 +75,13 @@ const DevTeam: React.FC = () => {
               <h3 className="text-sm ">
                 {member.description}
               </h3>
-              <div className="flex mt-2 items-center space-x-2">
+              <div className="flex mt-2  items-center space-x-2">
                 <Button
                   as="a"
                   href={member.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-tiny text-white bg-black/20"
+                  className="text-tiny text-white bg-black/80"
                   variant="flat"
                   color="default"
                   radius="lg"
@@ -87,7 +95,7 @@ const DevTeam: React.FC = () => {
                   href={member.portfolio}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-tiny text-white bg-black/20"
+                  className="text-tiny text-white bg-black/80"
                   variant="flat"
                   color="default"
                   radius="lg"
@@ -100,7 +108,7 @@ const DevTeam: React.FC = () => {
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-tiny text-white bg-black/20"
+                  className="text-tiny text-white bg-black/80"
                   variant="flat"
                   color="default"
                   radius="lg"
