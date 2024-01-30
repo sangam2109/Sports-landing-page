@@ -52,7 +52,7 @@ const DevTeam: React.FC = () => {
   return (
     <div className="">
       <div className="text-3xl flex justify-center mt-8 font-bold">Contributers</div>
-      <div className=" flex flex-wrap justify-center gap-4">
+      <div className=" flex flex-wrap justify-center gap-2">
         {teamMembers.map((member, index) => (
           <div key={index} className=" max-content m-4 ">
             <Card

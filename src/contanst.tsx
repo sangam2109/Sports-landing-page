@@ -137,3 +137,28 @@ export const RegisterSteps = {
     },
   ],
 };
+
+export const NavItems = {
+  Items: [
+    {
+      key:"1",
+      heading: "Home",
+      href:"#Home" 
+    },
+    {
+      key:"2",
+      heading: "Events",
+      href:"#Events" 
+    },
+    {
+      key:"3",
+      heading: "Dev Team",
+      href:"#DevTeam" 
+    },
+    {
+      key:"4",
+      heading: "FAQs",
+      href:"#FAQ" 
+    }
+  ]
+}
