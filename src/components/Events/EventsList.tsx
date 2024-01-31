@@ -18,16 +18,19 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import { FemaleEvents, MaleEvents } from "../../contanst";
+import Time from "../Timer/Time";
 
 const Events = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div
-      className="bg-gray-900 "
+      className="bg-blue "
+      
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
+        
       }}
     >
       <Carousel showArrows={true} showThumbs={false}>
@@ -125,6 +128,9 @@ const Events = () => {
           </Card>
         </div>
       </Carousel>
+      <div className="">
+        <Time />
+      </div>
     </div>
   );
 };

@@ -8,11 +8,11 @@ import { FaApple } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-gray-900 px-4 pb h-[-webkit-fill-available]">
+    <div className="bg-dark px-4 pb h-[-webkit-fill-available]">
       <div className="container mx-auto flex flex-col-reverse items-center md:flex-row  ">
         {/* Left Section */}
         <div className="w-full pt-8 mt-8 md:w-1/2 flex justify-center items-center">
-          {/* Second Image */}
+          {/* Image */}
           <div className="mx-auto max-w-md">
             <Image
               filter-blur-sm
@@ -39,11 +39,12 @@ const Hero: React.FC = () => {
                 width={20}
                 src="https://demos.creative-tim.com/nextjs-tailwind-app-presentation-page/logos/logo-google.png"
                 alt=""
+                className="text-white"
               />
               Android
             </Button>
             <Button
-              className="w-[80vw] md:w-fit px-8 text-white max-w-[240px] "
+              className="w-[80vw] md:w-fit px-8 text-white max-w-[240px]  "
               color="primary"
               variant="shadow"
             >

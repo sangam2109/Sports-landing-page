@@ -6,7 +6,7 @@ import Hero from "./components/HeroSection/Hero";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
 import Home from "./components/Home/Home";
 import Events from "./components/Events/EventsList";
-import Time from "./components/Timer/Time";
+
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Home />
       <Hero/>
       <Events />
-      <Time />
+      
       <DevTeam/>
       <FAQ/>
       <Footer/>
