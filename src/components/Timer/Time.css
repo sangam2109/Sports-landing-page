@@ -1,0 +1,134 @@
+main{
+    display: flex;
+    flex-flow: row;
+    gap: 2vw;
+    justify-content: center;
+    
+}
+
+#titleTimer{
+    gap: 5vw;
+}
+#titleTimer h1{
+   
+    width: 11vw;
+    text-align: center;
+    margin: 5px 0;
+    color: whitesmoke;
+    font-family: orbitron;
+    font-size: 3vw;
+
+}
+#first ,.launchInfo{
+    margin-top: 24vh;
+    margin-bottom: 29px;
+    text-align: center;
+    font-size: 3vw;
+    color: whitesmoke;
+    font-family: 'Orbitron';
+
+}
+footer{
+    display: flex;
+    gap: 10vw;
+    position: absolute;
+    bottom: 5vh;
+    justify-content: center;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px;
+}
+
+footer img{
+    width: 18px;
+    height: 18px;
+}
+.timeB{
+    
+    height: 10vw;
+    width: 10vw;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #33364e;
+    border: 2px solid black;
+    padding: 5px;
+}
+.animate__animated.animate__flipInX {
+    --animate-duration: 0.7s;
+  }
+  
+  
+.flipCard div{
+    font-size: 6vw;
+    /* color: whitesmoke   ; */
+    font-family: 'Orbitron', sans-serif;
+    animation-fill-mode:fill;
+    background-color: #3e3844;
+
+    /* animation: ScaleAnim 1s ease infinite; */
+}
+a{
+    color: rgb(201, 200, 200);
+}
+.launchInfo{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#launced{
+    display: none;
+}
+.launchInfo h1{
+    text-align: center;
+    font-size: larger;
+}
+
+
+@keyframes ScaleAnim {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+flex-flow: column;
+background-image: url(images/pattern-hills.svg) , url(images/bg-stars.svg)  ;
+background-color: #0e0d12;   
+background-repeat: no-repeat;
+background-position:  bottom, center;
+background-size: 100vw  7vw , 100% 100%;
+
+height:100vh;
+}
+
+
+@media (width <550px) {
+    #first{
+        font-size: 6vw ;
+    }
+    .time{
+        font-size: 6.4vh;
+
+    }
+    .timeB{
+        width: 15vw;
+        height: 15vw;
+    }
+    body{
+    background-repeat: no-repeat;
+    background-position:  bottom, center;
+    background-size: 100vw 19vh , 100% 100%;
+    height:97vh;
+    }
+}

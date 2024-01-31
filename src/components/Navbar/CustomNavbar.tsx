@@ -11,8 +11,9 @@ import {
   Image,
 } from "@nextui-org/react";
 import GndecAthletix from "../../assets/favicon.png";
+import { NavItems } from "../../contanst";
 
-export default function CustomNavbar() {
+const CustomNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
@@ -21,18 +22,18 @@ export default function CustomNavbar() {
       className="bg-[#111827] text-[#ffffffe3]"
     >
       <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
         <NavbarBrand>
           <Image src={GndecAthletix} width={45} />
           <p className="font-bold text-inherit ml-4">GNDEC ATHLETIX</p>
         </NavbarBrand>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex gap-8 bg-[#1118276e] "
+        className="hidden sm:flex gap-8 bg-[#111827]  "
         justify="center"
       >
         <NavbarItem>
@@ -54,7 +55,7 @@ export default function CustomNavbar() {
           <Link
             color="foreground"
             className="text-inherit"
-            href="#"
+            href="#DevTeam"
             aria-current="page"
           >
             Dev Team
@@ -67,48 +68,25 @@ export default function CustomNavbar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="{bg-[#1118276e] {isNavbarOpen ? block : hidden )}">
+      <NavbarMenu
+        className=""
+      >
         <NavbarMenuItem>
-          <Link
-            className="w-full text-[#ffffffe3] mt-4 block text-center "
-            href="#"
-            size="lg"
-            
-          >
-            Home
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link
-            className="w-full text-[#ffffffe3] mt-4 block text-center"
-            href="#FAQ"
-            size="lg"
-            
-          >
-            Events
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link
-            className="w-full text-[#ffffffe3] mt-4 block text-center"
-            href="FAQ"
-            size="lg"
-            
-          >
-            Dev Team
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link
-            className="w-full text-[#ffffffe3] mt-4 block text-center"
-            href="#"
-            size="lg"
-            
-          >
-            Contact Us
-          </Link>
+          {NavItems.Items.map((item) => {
+            return (
+              <Link
+                key={item.key}
+                className="w-full text-black mt-4 block text-center"
+                href={item.href}
+                size="lg"
+              >
+                {item.heading}
+              </Link>
+            );
+          })}
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
-}
+};
+export default CustomNavbar;

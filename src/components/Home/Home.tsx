@@ -1,7 +1,6 @@
 import React from "react";
 import background from "../../assets/background.png";
 import { Image } from "@nextui-org/react";
-// import { Button } from "@nextui-org/react";
 
 const Home: React.FC = () => {
   return (
@@ -10,7 +9,7 @@ const Home: React.FC = () => {
         <Image
           src={background}
           alt="Background"
-          className="w-[320vh] h-[80vh] md:h-[80vh] object-cover opacity-25 filter blur-sm brightness-105 contrast-125 "
+          className="w-[100vh] h-[60vh] md:h-[80vh] w-[320vh] object-cover opacity-25 filter blur-sm brightness-105 contrast-125 "
         />
       </div>
       <div className="absolute inset-0 flex flex-row items-center justify-center text-white text-center md:flex flex-col">
