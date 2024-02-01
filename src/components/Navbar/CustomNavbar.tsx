@@ -14,12 +14,15 @@ import GndecAthletix from "../../assets/favicon.png";
 import { NavItems } from "../../contanst";
 
 const CustomNavbar = () => {
-  const [isMenuOpen, setIsMenuOpen] =  React.useReducer((current) => !current, false);
+  const [isMenuOpen, setIsMenuOpen] = React.useReducer(
+    (current) => !current,
+    false
+  );
   return (
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-[#111827] text-white"
+      className="bg-dark text-white"
     >
       <NavbarContent>
         <NavbarBrand>
@@ -28,7 +31,7 @@ const CustomNavbar = () => {
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm"
           icon={isMenuOpen}
         />
       </NavbarContent>

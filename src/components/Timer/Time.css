@@ -8,16 +8,16 @@ main {
   justify-content: center;
 }
 
-
 #titleTimer {
   gap: 9vw;
 }
 #titleTimer h1 {
   /* width: 10vw; */
   text-align: center;
-  color: #bc6c25;
+  color: #dda15e;
+
   font-size: x-large;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 #first,
 .launchInfo {
@@ -102,8 +102,8 @@ a {
   font-family: sans-serif;
   flex-direction: column;
   /* background-color: rgb(232, 230, 228); */
-  box-shadow: 0px 2px 3px 0px #1a1a23;
-  color: #bc6c25;
+  /* box-shadow: 0px 2px 3px 0px #1a1a23; */
+  color: #f7b32b;
   overflow: hidden;
   border-radius: 3px;
   font-size: 5rem;
@@ -117,11 +117,11 @@ a {
 .flipCard .top-flip {
   height: 0.9em;
   padding: 0.4em;
-  width: 12vw;
+  width: 18vw;
   text-align: center;
   line-height: 1;
-  color: #bc6c25;
-
+  color: #f7b32b;
+  font-size: xxx-large;
   overflow: hidden;
   /* border-radius: 2px; */
 }
@@ -129,9 +129,10 @@ a {
 .top,
 .flipCard .bottom-flip {
   /* background-color: rgb(226, 226, 226); */
-  color: #bc6c25;
+  color: #f7b32b;
   display: flex;
   justify-content: center;
+
   /* border-bottom: .001em solid #2c2d44 */
 }
 .circle,
@@ -139,7 +140,7 @@ a {
   width: 0.8vw;
   position: absolute;
   height: 0.8vw;
-  background-color: #bc6c25 !important;
+  background-color: #f7b32b !important;
   border-radius: 50%;
   right: -0.35vw;
   top: 48%;
@@ -154,6 +155,7 @@ a {
   position: absolute;
   content: attr(data-currelem);
   line-height: 1;
+  font-size: xxx-larger;
   /* background-color: #544a5f; */
   /* color: blue; */
   animation: flipdown 250ms ease-out;
