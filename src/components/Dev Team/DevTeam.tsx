@@ -9,6 +9,9 @@ import {
 } from "@nextui-org/react";
 import { FiGithub, FiLinkedin, FiGlobe } from "react-icons/fi";
 import Sangam from "../../assets/Sangam.png";
+import Vansh from "../../assets/vansh.avif"
+import Rajveer from "../../assets/rajveer.png"
+import inderpreet from "../../assets/inderpreet.jpg"
 import "./DevTeam.css";
 
 // Sample data for team members
@@ -16,34 +19,34 @@ const teamMembers = [
   {
     name: "Inderpreet Singh",
     description: "Full Stack Developer",
-    linkedin: "https://www.linkedin.com/in/johndoe/",
-    github: "https://github.com/johndoe",
+    linkedin: "https://www.linkedin.com/in/inderpreet-singh13/",
+    github: "https://github.com/Inder-singh001",
     portfolio: "https://www.portfolio.com/johndoe/",
-    personImage: { Sangam }, // Adjust image path accordingly
+    personImage:  inderpreet , // Adjust image path accordingly
   },
   {
     name: "Vansh Kumar",
     description: "Full Stack Developer",
-    linkedin: "https://www.linkedin.com/in/janesmith/",
-    github: "https://github.com/janesmith",
-    portfolio: "https://www.portfolio.com/janesmith/",
-    personImage: { Sangam }, // Adjust image path accordingly
+    linkedin: "https://www.linkedin.com/in/vansh1190",
+    github: "https://github.com/vansh1190",
+    portfolio: "https://vansh1190.vercel.app",
+    personImage:  Vansh , // Adjust image path accordingly
   },
   {
     name: "Sangam Arora",
     description: "Full Stack Developer",
-    linkedin: "https://www.linkedin.com/in/janesmith/",
-    github: "https://github.com/janesmith",
-    portfolio: "https://www.portfolio.com/janesmith/",
-    personImage: { Sangam }, // Adjust image path accordingly
+    linkedin: "https://www.linkedin.com/in/sangam-arora-5078b6223/",
+    github: "https://github.com/sangam2109",
+    portfolio: "https://sangamportfolio.vercel.app",
+    personImage:  Sangam , // Adjust image path accordingly
   },
   {
     name: "Rajveer Singh",
     description: "Full Stack Developer",
-    linkedin: "https://www.linkedin.com/in/janesmith/",
-    github: "https://github.com/janesmith",
-    portfolio: "https://www.portfolio.com/janesmith/",
-    personImage: { Sangam }, // Adjust image path accordingly
+    linkedin: "https://www.linkedin.com/in/rajveer-singh-sidhu-534a25232",
+    github: "https://github.com/rajveer810214",
+    portfolio: "https://rajveersidhu.vercel.app",
+    personImage: Rajveer , // Adjust image path accordingly
   },
   // Add more team members as needed
 ];
@@ -51,7 +54,9 @@ const teamMembers = [
 const DevTeam: React.FC = () => {
   return (
     <div className="">
-      <div className="text-3xl flex justify-center mt-8 font-bold">Contributers</div>
+      <div className="text-3xl flex justify-center mt-8 font-bold">
+        Contributers
+      </div>
       <div className=" flex flex-wrap justify-center gap-2">
         {teamMembers.map((member, index) => (
           <div key={index} className=" max-content m-4 ">
@@ -66,7 +71,7 @@ const DevTeam: React.FC = () => {
                   alt={`Team Member ${index + 1}`}
                   className="object-cover"
                   height={150}
-                  src={member.personImage.Sangam} // Use the personImage property
+                  src={member.personImage} // Use the personImage property
                   width={200}
                 />
               </CardBody>
@@ -81,7 +86,7 @@ const DevTeam: React.FC = () => {
                     href={member.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-tiny text-white bg-black/80"
+                    className="text-tiny text-white bg-dark"
                     variant="flat"
                     color="default"
                     radius="lg"
@@ -95,7 +100,7 @@ const DevTeam: React.FC = () => {
                     href={member.portfolio}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-tiny text-white bg-black/80"
+                    className="text-tiny text-white bg-dark"
                     variant="flat"
                     color="default"
                     radius="lg"
@@ -108,7 +113,7 @@ const DevTeam: React.FC = () => {
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-tiny text-white bg-black/80"
+                    className="text-tiny text-white bg-dark"
                     variant="flat"
                     color="default"
                     radius="lg"
