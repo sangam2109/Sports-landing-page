@@ -32,14 +32,14 @@ const Events = () => {
         backgroundPosition: "center",
       }}
     >
-      <Carousel showArrows={true} showThumbs={false}>
+      <Carousel showArrows={false} >
         <div className="max-w-[400vh] m-8">
-          <div className="text-2xl text-white">
+          <div className="text-2xl text-lightY font-bold">
             <h2>
               Welcome to the <br /> Annual Athletic Meet-2024
             </h2>
           </div>
-          <div className="text-lg text-white m-6 p-2">
+          <div className="text-lg text-lightY m-6 p-2">
             <p>
               We are excited to have you join the GNDEC Athletic Meet-2024,
               where we celebrate sports. teamwork and fun!{" "}
@@ -71,13 +71,13 @@ const Events = () => {
               <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                className="m-2 bg-gray-900"
+                className="m-2 bg-dark"
               >
                 <ModalContent>
                   {(onClose) => (
                     <>
                       <ModalHeader className="flex flex-col gap-1 text-white">
-                        <h1>Lists of Events</h1>
+                        <h1 className="text-white">Lists of Events</h1>
                         <div className="pt-4  flex items-center justify-between">
                           <div className="flex items-center justify-center space-x-1 w-1/2">
                             <span>Male</span>
@@ -115,7 +115,7 @@ const Events = () => {
                         </div>
                       </ModalBody>
                       <ModalFooter>
-                        <Button color="primary" onPress={onClose}>
+                        <Button className="bg-brown" onPress={onClose}>
                           OK!, I understand
                         </Button>
                       </ModalFooter>

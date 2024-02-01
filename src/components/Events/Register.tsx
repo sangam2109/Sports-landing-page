@@ -60,7 +60,7 @@ export default function Register(){
                         </ol>
                       </ModalBody>
                       <ModalFooter>
-                        <Button color="primary" onPress={onClose}>
+                        <Button className="bg-brown" onPress={onClose}>
                           OK!, I understand
                         </Button>
                       </ModalFooter>

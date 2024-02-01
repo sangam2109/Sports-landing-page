@@ -19,7 +19,7 @@ const CustomNavbar = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-[#111827] text-white"
+      className="bg-dark text-white"
     >
       <NavbarContent>
         <NavbarBrand>

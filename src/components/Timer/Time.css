@@ -14,7 +14,7 @@ main {
 #titleTimer h1 {
   /* width: 10vw; */
   text-align: center;
-  color: #bc6c25;
+  color: #dda15e;
   font-size: x-large;
   font-family: "Orbitron", sans-serif;
 }
@@ -101,7 +101,7 @@ a {
   font-family: sans-serif;
   flex-direction: column;
   /* background-color: rgb(232, 230, 228); */
-  box-shadow: 0px 2px 3px 0px #1a1a23;
+  /* box-shadow: 0px 2px 3px 0px #1a1a23; */
   color: #bc6c25;
   overflow: hidden;
   border-radius: 3px;
@@ -116,11 +116,11 @@ a {
 .flipCard .top-flip {
   height: 0.9em;
   padding: 0.4em;
-  width: 12vw;
+  width: 18vw;
   text-align: center;
   line-height: 1;
   color: #bc6c25;
-
+  font-size: xxx-large;
   overflow: hidden;
   /* border-radius: 2px; */
 }
@@ -131,6 +131,7 @@ a {
   color: #bc6c25;
   display: flex;
   justify-content: center;
+
   /* border-bottom: .001em solid #2c2d44 */
 }
 .circle,
@@ -153,6 +154,7 @@ a {
   position: absolute;
   content: attr(data-currelem);
   line-height: 1;
+  font-size: xxx-larger;
   /* background-color: #544a5f; */
   /* color: blue; */
   animation: flipdown 250ms ease-out;
