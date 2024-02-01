@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { HTMLAttributes, useEffect } from "react";
 // import { Chip } from "@nextui-org/react";
 import "./Time.css";
 // const Time: React.FC = () => {
@@ -82,7 +82,7 @@ import "./Time.css";
 
 const Time = () => {
   useEffect(() => {
-    const FlipCardAnim = (i, flipCard) => {
+    const FlipCardAnim = (i: string | number | null, flipCard: HTMLElement | null) => {
       const c = flipCard.children;
       const topHalf = c[0];
       const bottom = c[1];
@@ -167,7 +167,7 @@ const Time = () => {
       if (minutes < 10) {
         minutes = `0${minutes}`;
       }
-      document.getElementById("secTop").innerHTML = seconds;
+      (document.getElementById("secTop")).innerHTML = seconds;
       document.getElementById("secBottom").innerHTML = seconds;
       FlipCardAnim(seconds, SecCARD);
       document.getElementById("minBottom").innerHTML = minutes;

@@ -40,7 +40,7 @@ export default function Register(){
               <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                className="m-2 bg-gray-900"
+                className="m-2 bg-dark"
               >
                 <ModalContent>
                   {(onClose) => (

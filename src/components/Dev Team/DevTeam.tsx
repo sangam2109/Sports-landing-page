@@ -51,7 +51,9 @@ const teamMembers = [
 const DevTeam: React.FC = () => {
   return (
     <div className="">
-      <div className="text-3xl flex justify-center mt-8 font-bold">Contributers</div>
+      <div className="text-4xl flex justify-center mt-8 font-bold">
+        Contributers
+      </div>
       <div className=" flex flex-wrap justify-center gap-2">
         {teamMembers.map((member, index) => (
           <div key={index} className=" max-content m-4 ">
@@ -81,9 +83,8 @@ const DevTeam: React.FC = () => {
                     href={member.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-tiny text-white bg-black/80"
+                    className="text-tiny text-white bg-dark"
                     variant="flat"
-                    color="default"
                     radius="lg"
                     size="sm"
                   >
@@ -95,9 +96,8 @@ const DevTeam: React.FC = () => {
                     href={member.portfolio}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-tiny text-white bg-black/80"
+                    className="text-tiny text-white bg-dark"
                     variant="flat"
-                    color="default"
                     radius="lg"
                     size="sm"
                   >
@@ -108,9 +108,8 @@ const DevTeam: React.FC = () => {
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-tiny text-white bg-black/80"
+                    className="text-tiny text-white bg-dark"
                     variant="flat"
-                    color="default"
                     radius="lg"
                     size="sm"
                   >
