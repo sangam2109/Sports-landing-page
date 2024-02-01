@@ -25,12 +25,11 @@ const Events = () => {
 
   return (
     <div
-      className="bg-blue "
+      className="bg-[#111827] "
       
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
-        
       }}
     >
       <Carousel showArrows={true} showThumbs={false}>

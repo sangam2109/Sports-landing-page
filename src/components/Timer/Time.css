@@ -8,16 +8,16 @@ main {
   justify-content: center;
 }
 
+
 #titleTimer {
-  gap: 5vw;
-  
+  gap: 9vw;
 }
 #titleTimer h1 {
-  width: 11vw;
+  /* width: 10vw; */
   text-align: center;
   color: #bc6c25;
-  font-family: orbitron;
-  font-size: xx-large;
+  font-size: x-large;
+  font-family: 'Orbitron', sans-serif;
 }
 #first,
 .launchInfo {
@@ -117,7 +117,7 @@ a {
 .flipCard .top-flip {
   height: 0.9em;
   padding: 0.4em;
-  width: 14vw;
+  width: 12vw;
   text-align: center;
   line-height: 1;
   color: #bc6c25;
