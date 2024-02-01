@@ -1,134 +1,195 @@
-main{
-    display: flex;
-    flex-flow: row;
-    gap: 2vw;
-    justify-content: center;
-    
-}
-
-#titleTimer{
-    gap: 5vw;
-}
-#titleTimer h1{
-   
-    width: 11vw;
-    text-align: center;
-    margin: 5px 0;
-    color: whitesmoke;
-    font-family: orbitron;
-    font-size: 3vw;
-
-}
-#first ,.launchInfo{
-    margin-top: 24vh;
-    margin-bottom: 29px;
-    text-align: center;
-    font-size: 3vw;
-    color: whitesmoke;
-    font-family: 'Orbitron';
-
-}
-footer{
-    display: flex;
-    gap: 10vw;
-    position: absolute;
-    bottom: 5vh;
-    justify-content: center;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 100px;
-}
-
-footer img{
-    width: 18px;
-    height: 18px;
-}
-.timeB{
-    
-    height: 10vw;
-    width: 10vw;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #33364e;
-    border: 2px solid black;
-    padding: 5px;
-}
 .animate__animated.animate__flipInX {
-    --animate-duration: 0.7s;
+  --animate-duration: 0.7s;
+}
+main {
+  display: flex;
+  flex-flow: row;
+  gap: 2vw;
+  justify-content: center;
+}
+
+#titleTimer {
+  gap: 5vw;
+  
+}
+#titleTimer h1 {
+  width: 11vw;
+  text-align: center;
+  color: #bc6c25;
+  font-family: orbitron;
+  font-size: xx-large;
+}
+#first,
+.launchInfo {
+  margin-top: 24vh;
+  margin-bottom: 29px;
+  text-align: center;
+  font-size: 3vw;
+  color: whitesmoke;
+  font-family: "Orbitron";
+}
+.timeB {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #33364e;
+  border: 2px solid black;
+  padding: 5px;
+}
+flipCard div {
+  font-size: 6vw;
+  /* color: whitesmoke   ; */
+  font-family: "Orbitron", sans-serif;
+  animation-fill-mode: fill;
+  background-color: #3e3844;
+}
+h1 {
+  color: #bc6c25;
+  font-size: larger;
+}
+.launchInfo {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#launced {
+  display: none;
+}
+.launchInfo h1 {
+  text-align: center;
+  font-size: larger;
+}
+
+#body {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  /* background-image: url(images/pattern-hills.svg), url(images/bg-stars.svg); */
+  background-color: dark;
+  /* background-repeat: no-repeat;
+    background-position: bottom, center;
+    background-size: 100vw 7vw, 100% 100%; */
+}
+.flipCard div {
+  animation: ScaleAnim 1s ease infinite;
+}
+a {
+  color: rgb(201, 200, 200);
+}
+
+/* time-flip */
+*,
+.bottom-flip,
+.top-flip {
+  box-sizing: border-box;
+  /* background-color: antiquewhite; */
+}
+
+.top {
+  background-color: #2c2d44 !important;
+}
+.bottom {
+  background-color: #34364f !important;
+}
+
+.flipCard {
+  display: inline-flex;
+  /* -flow: column; */
+  font-family: sans-serif;
+  flex-direction: column;
+  /* background-color: rgb(232, 230, 228); */
+  box-shadow: 0px 2px 3px 0px #1a1a23;
+  color: #bc6c25;
+  overflow: hidden;
+  border-radius: 3px;
+  font-size: 5rem;
+  position: relative;
+  /* scale: 1.5; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+.top,
+.bottom,
+.flipCard .bottom-flip,
+.flipCard .top-flip {
+  height: 0.9em;
+  padding: 0.4em;
+  width: 14vw;
+  text-align: center;
+  line-height: 1;
+  color: #bc6c25;
+
+  overflow: hidden;
+  /* border-radius: 2px; */
+}
+
+.top,
+.flipCard .bottom-flip {
+  /* background-color: rgb(226, 226, 226); */
+  color: #bc6c25;
+  display: flex;
+  justify-content: center;
+  /* border-bottom: .001em solid #2c2d44 */
+}
+.circle,
+.circle-2 {
+  width: 0.8vw;
+  position: absolute;
+  height: 0.8vw;
+  background-color: #bc6c25 !important;
+  border-radius: 50%;
+  right: -0.35vw;
+  top: 48%;
+  z-index: 1;
+}
+.circle-2 {
+  left: -0.35vw;
+  /* left: -5px; */
+}
+
+.flipCard .bottom-flip {
+  position: absolute;
+  content: attr(data-currelem);
+  line-height: 1;
+  /* background-color: #544a5f; */
+  /* color: blue; */
+  animation: flipdown 250ms ease-out;
+  transform-origin: bottom;
+}
+@keyframes flipdown {
+  100% {
+    transform: rotateX(90deg);
   }
-  
-  
-.flipCard div{
-    font-size: 6vw;
-    /* color: whitesmoke   ; */
-    font-family: 'Orbitron', sans-serif;
-    animation-fill-mode:fill;
-    background-color: #3e3844;
-
-    /* animation: ScaleAnim 1s ease infinite; */
-}
-a{
-    color: rgb(201, 200, 200);
-}
-.launchInfo{
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#launced{
-    display: none;
-}
-.launchInfo h1{
-    text-align: center;
-    font-size: larger;
 }
 
-
-@keyframes ScaleAnim {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1);
-
-    }
+.bottom,
+.flipCard .top-flip {
+  background-color: #2c2d44;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 3px 3px;
+  /* border-bottom: 1px solid rgba(65, 65, 65, 0.247); */
+  align-items: flex-end;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-flex-flow: column;
-background-image: url(images/pattern-hills.svg) , url(images/bg-stars.svg)  ;
-background-color: #0e0d12;   
-background-repeat: no-repeat;
-background-position:  bottom, center;
-background-size: 100vw  7vw , 100% 100%;
+.flipCard .top-flip {
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-currelem);
+  line-height: 1;
+  bottom: 0;
+  background-color: #2c2d44;
+  transform: rotateX(90deg);
 
-height:100vh;
+  animation: flipbottom 250ms ease-out 250ms;
+  /* animation-delay: 1000ms; */
+  transform-origin: top;
 }
-
-
-@media (width <550px) {
-    #first{
-        font-size: 6vw ;
-    }
-    .time{
-        font-size: 6.4vh;
-
-    }
-    .timeB{
-        width: 15vw;
-        height: 15vw;
-    }
-    body{
-    background-repeat: no-repeat;
-    background-position:  bottom, center;
-    background-size: 100vw 19vh , 100% 100%;
-    height:97vh;
-    }
+@keyframes flipbottom {
+  100% {
+    transform: rotateX(0deg);
+  }
 }

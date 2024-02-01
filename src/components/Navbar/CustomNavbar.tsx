@@ -19,7 +19,7 @@ const CustomNavbar = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-[#111827] text-[#ffffffe3]"
+      className="bg-[#111827] text-white"
     >
       <NavbarContent>
         <NavbarBrand>
@@ -28,7 +28,7 @@ const CustomNavbar = () => {
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm:hidden "
         />
       </NavbarContent>
 
@@ -69,14 +69,14 @@ const CustomNavbar = () => {
       </NavbarContent>
 
       <NavbarMenu
-        className=""
+        className="bg-dark"
       >
         <NavbarMenuItem>
           {NavItems.Items.map((item) => {
             return (
               <Link
                 key={item.key}
-                className="w-full text-black mt-4 block text-center"
+                className="text-white mt-4 block text-center"
                 href={item.href}
                 size="lg"
               >

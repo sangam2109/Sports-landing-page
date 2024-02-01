@@ -14,7 +14,7 @@ import "./DevTeam.css";
 // Sample data for team members
 const teamMembers = [
   {
-    name: "Vansh Kumar",
+    name: "Inderpreet Singh",
     description: "Full Stack Developer",
     linkedin: "https://www.linkedin.com/in/johndoe/",
     github: "https://github.com/johndoe",
@@ -22,7 +22,7 @@ const teamMembers = [
     personImage: { Sangam }, // Adjust image path accordingly
   },
   {
-    name: "Rajveer Singh",
+    name: "Vansh Kumar",
     description: "Full Stack Developer",
     linkedin: "https://www.linkedin.com/in/janesmith/",
     github: "https://github.com/janesmith",
@@ -38,7 +38,7 @@ const teamMembers = [
     personImage: { Sangam }, // Adjust image path accordingly
   },
   {
-    name: "Inderpreet Singh",
+    name: "Rajveer Singh",
     description: "Full Stack Developer",
     linkedin: "https://www.linkedin.com/in/janesmith/",
     github: "https://github.com/janesmith",
