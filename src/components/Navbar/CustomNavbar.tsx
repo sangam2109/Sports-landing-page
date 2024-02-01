@@ -14,10 +14,10 @@ import GndecAthletix from "../../assets/favicon.png";
 import { NavItems } from "../../contanst";
 
 const CustomNavbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+  const [isMenuOpen, setIsMenuOpen] =  React.useReducer((current) => !current, false);
   return (
     <Navbar
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       className="bg-dark text-white"
     >
@@ -28,7 +28,8 @@ const CustomNavbar = () => {
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden "
+          className="sm:hidden"
+          icon={isMenuOpen}
         />
       </NavbarContent>
 
@@ -45,7 +46,7 @@ const CustomNavbar = () => {
           <Link
             color="foreground"
             className="text-inherit"
-            href="#FAQ"
+            href="#Event"
             aria-current="page"
           >
             Event
@@ -62,15 +63,13 @@ const CustomNavbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" className="text-inherit" href="#">
+          <Link color="foreground" className="text-inherit" href="#FAQ">
             Contact Us
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu
-        className="bg-dark"
-      >
+      <NavbarMenu className="bg-dark">
         <NavbarMenuItem>
           {NavItems.Items.map((item) => {
             return (
@@ -79,6 +78,7 @@ const CustomNavbar = () => {
                 className="text-white mt-4 block text-center"
                 href={item.href}
                 size="lg"
+                onPress={() => setIsMenuOpen()}
               >
                 {item.heading}
               </Link>
