@@ -143,12 +143,12 @@ export const NavItems = {
     {
       key:"1",
       heading: "Home",
-      href:"#Home" 
+      href:"#" 
     },
     {
       key:"2",
       heading: "Events",
-      href:"#Events" 
+      href:"#Event" 
     },
     {
       key:"3",

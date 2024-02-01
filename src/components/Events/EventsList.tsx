@@ -49,7 +49,7 @@ const Events = () => {
         <div className="m-4">
           <Register />
         </div>
-        <div className="m-4">
+        <div className="m-4" id="Event">
           <Card className="max-w-[400px]">
             <CardHeader className="flex gap-3">
               <div className="flex flex-col ">
