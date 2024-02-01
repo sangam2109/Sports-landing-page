@@ -83,7 +83,7 @@ import "./Time.css";
 
 const Time = () => {
   useEffect(() => {
-    const FlipCardAnim = (i, flipCard) => {
+    const FlipCardAnim = (i: any, flipCard:any) => {
       const c = flipCard.children;
       const topHalf = c[0];
       const bottom = c[1];
