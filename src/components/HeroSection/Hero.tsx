@@ -4,6 +4,7 @@ import React from "react";
 import { Image } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import Android from "../../assets/iphones.png";
+import ALogo from "../../assets/android-logo.png";
 import { FaApple } from "react-icons/fa";
 
 const Hero: React.FC = () => {
@@ -36,8 +37,8 @@ const Hero: React.FC = () => {
               variant="bordered"
             >
               <img
-                width={20}
-                src="https://demos.creative-tim.com/nextjs-tailwind-app-presentation-page/logos/logo-google.png"
+                width={40}
+                src={ALogo}
                 alt=""
                 className="text-white"
               />
