@@ -13,7 +13,7 @@ export const Footer = () => {
           <p className="text-center opacity-80 md:text-start">
             Your All in one Athletic Meet Registration App
           </p>
-          <ul className="flex  items-center justify-center lg:justify-start gap-6 mt-12 font-normal">
+          <ul className="flex  items-center justify-center lg:justify-start gap-6 mt-8 font-normal">
             <li>Home</li>
             <li>Events</li>
             <li>Contact Us</li>
@@ -33,8 +33,8 @@ export const Footer = () => {
         </div>
       </section>
       <hr className="w-[80vw] m-auto bg-white opacity-60" />
-      <section className="bg-[#212121] w-full text-white flex flex-col justify-between items-center p-8">
-        <div className="mt-1">
+      <section className="bg-[#212121] w-full text-white flex flex-col  items-center p-4">
+        <div className="">
           {/* <h1 className="text-xl text-center font-bold">GNDEC ATHLETIX</h1> */}
           <p className="text-center opacity-60">© 2024 gndecathletix.games</p>
           {/* <ul className="flex  items-center justify-center gap-6 mt-14 font-normal">

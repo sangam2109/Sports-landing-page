@@ -20,21 +20,21 @@ export default function Register(){
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     return(
         <Card className="max-w-[400px] ">
-            <CardHeader className="flex gap-3">
+            <CardHeader className="flex gap-3 justify-center">
               <div className="flex flex-col">
-                <h2 className="text-lg">How to Register</h2>
+                <h2 className="text-xl">How to Register</h2>
               </div>
             </CardHeader>
             <Divider />
-            <CardBody>
+            <CardBody className="text-lg p-6">
               <p>
                 We've got the GNDEC ATHLETIX app just for you. It's an easy way
                 to sign up and be part of the Athletic Meet 2024.
               </p>
             </CardBody>
             <Divider />
-            <CardFooter>
-              <Button onPress={onOpen} color="primary">
+            <CardFooter className="flex justify-end">
+              <Button onPress={onOpen} color="primary" className="bg-yellow">
                 Know More !
               </Button>
               <Modal

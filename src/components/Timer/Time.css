@@ -15,6 +15,7 @@ main {
   /* width: 10vw; */
   text-align: center;
   color: #dda15e;
+
   font-size: x-large;
   font-family: "Orbitron", sans-serif;
 }
@@ -102,7 +103,7 @@ a {
   flex-direction: column;
   /* background-color: rgb(232, 230, 228); */
   /* box-shadow: 0px 2px 3px 0px #1a1a23; */
-  color: #bc6c25;
+  color: #f7b32b;
   overflow: hidden;
   border-radius: 3px;
   font-size: 5rem;
@@ -119,7 +120,7 @@ a {
   width: 18vw;
   text-align: center;
   line-height: 1;
-  color: #bc6c25;
+  color: #f7b32b;
   font-size: xxx-large;
   overflow: hidden;
   /* border-radius: 2px; */
@@ -128,7 +129,7 @@ a {
 .top,
 .flipCard .bottom-flip {
   /* background-color: rgb(226, 226, 226); */
-  color: #bc6c25;
+  color: #f7b32b;
   display: flex;
   justify-content: center;
 
@@ -139,7 +140,7 @@ a {
   width: 0.8vw;
   position: absolute;
   height: 0.8vw;
-  background-color: #bc6c25 !important;
+  background-color: #f7b32b !important;
   border-radius: 50%;
   right: -0.35vw;
   top: 48%;

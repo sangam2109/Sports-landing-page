@@ -24,48 +24,41 @@ const Events = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <div
-      className="bg-[#111827] "
-      
-      style={{
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <Carousel showArrows={false} >
-        <div className="max-w-[400vh] m-8">
-          <div className="text-2xl text-lightY font-bold">
+    <div className="bg-[#1f2937] pt-12 ">
+      <Carousel showArrows= {true}>
+        <div className="max-w-[400vh] m-8 ">
+          <div className="text-3xl text-yellow font-bold">
             <h2>
-              Welcome to the <br /> Annual Athletic Meet-2024
+              Welcome to the Annual Athletic Meet-2024
             </h2>
           </div>
-          <div className="text-lg text-lightY m-6 p-2">
+          <div className="text-xl text-yellow m-4 p-4">
             <p>
               We are excited to have you join the GNDEC Athletic Meet-2024,
-              where we celebrate sports. teamwork and fun!{" "}
+              where we celebrate sports. teamwork and fun!
             </p>
           </div>
         </div>
-        <div className="m-4">
+        <div className="m-4 flex items-center">
           <Register />
         </div>
-        <div className="m-4" id="Event">
+        <div className="m-4 " id="Event">
           <Card className="max-w-[400px]">
-            <CardHeader className="flex gap-3">
+            <CardHeader className="flex gap-3 justify-center">
               <div className="flex flex-col ">
-                <h2 className="text-lg">Events</h2>
+                <h2 className="text-xl">Events</h2>
               </div>
             </CardHeader>
             <Divider />
-            <CardBody className="h-[13vh] text-md">
+            <CardBody className="h-[22vh] text-lg p-6">
               <p>
                 A diverse array of events awaits participants of all interests
                 and abilities.
               </p>
             </CardBody>
             <Divider />
-            <CardFooter>
-              <Button onPress={onOpen} color="primary">
+            <CardFooter className="flex justify-end">
+              <Button onPress={onOpen} color="primary" className="bg-yellow">
                 Know More !
               </Button>
               <Modal

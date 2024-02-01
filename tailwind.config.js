@@ -10,12 +10,13 @@ export const content = [
 export const theme = {
   extend: {},
   colors: {
-    'white' : '#ffffff',
+    'white': '#ffffff',
     'blue': '#219ebc',
     'dark': '#111827',
     'brown': '#bc6c25',
     'lightB': '#dda15e',
     'lightY': '#fefae0',
+    'yellow': '#f7b32b',
     'Dgreen': '#283618',
     'green': '#606c38'
   },
