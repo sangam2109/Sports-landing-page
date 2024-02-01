@@ -18,6 +18,9 @@ export const theme = {
     'lightY': '#fefae0',
     'Dgreen': '#283618',
     'green': '#606c38'
+  },
+  font: {
+
   }
 };
 export const darkMode = "class";

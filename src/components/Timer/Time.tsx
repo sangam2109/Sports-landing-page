@@ -1,4 +1,5 @@
-import { HTMLAttributes, useEffect } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useEffect } from "react";
 // import { Chip } from "@nextui-org/react";
 import "./Time.css";
 // const Time: React.FC = () => {
@@ -82,11 +83,11 @@ import "./Time.css";
 
 const Time = () => {
   useEffect(() => {
-    const FlipCardAnim = (i: string | number | null, flipCard: HTMLElement | null) => {
+    const FlipCardAnim = (i, flipCard) => {
       const c = flipCard.children;
       const topHalf = c[0];
       const bottom = c[1];
-      const topFlip = document.createElement("div");
+      const topFlip:any = document.createElement("div");
       const BottomFlip = document.createElement("div");
       topFlip.classList.add("top-flip");
       BottomFlip.classList.add("bottom-flip");
@@ -116,7 +117,7 @@ const Time = () => {
       localStorage.setItem("Date", "February 17, 2024 00:00:00");
     }
 
-    const LaunchDate = new Date(localStorage.getItem("Date")).getTime();
+    const LaunchDate = new Date(localStorage.getItem("Date") as string).getTime();
 
     const SecCARD = document.getElementById("flipCardSec");
     const MinCARD = document.getElementById("flipCardMin");
@@ -126,11 +127,11 @@ const Time = () => {
     const loop = setInterval(() => {
       const date = new Date().getTime();
       const distance = LaunchDate - date;
-      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      let hours = Math.floor(
+      let days:any = Math.floor(distance / (1000 * 60 * 60 * 24));
+      let hours:any = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let minutes:any = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (days < 0 || hours < 0 || minutes < 0 || seconds < 0) {
@@ -150,11 +151,11 @@ const Time = () => {
 
       if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
         setTimeout(() => {
-          document.getElementById("timer").style.display = "none";
-          document.getElementById("first").style.display = "none";
+          (document.getElementById("timer") as HTMLElement).style.display = "none";
+          (document.getElementById("first") as HTMLElement).style.display = "none";
         }, 100);
-        document.getElementById("launced").style.display = "block";
-        document.getElementById("second").innerHTML = "00";
+        (document.getElementById("launced") as HTMLElement).style.display = "block";
+        (document.getElementById("second") as HTMLElement).innerHTML = "00";
       }
 
       if (days < 10) {
@@ -167,15 +168,15 @@ const Time = () => {
       if (minutes < 10) {
         minutes = `0${minutes}`;
       }
-      (document.getElementById("secTop")).innerHTML = seconds;
-      document.getElementById("secBottom").innerHTML = seconds;
+      (document.getElementById("secTop") as HTMLElement).innerHTML = seconds.toString();
+      (document.getElementById("secBottom") as HTMLElement).innerHTML = seconds.toString();
       FlipCardAnim(seconds, SecCARD);
-      document.getElementById("minBottom").innerHTML = minutes;
-      document.getElementById("minTop").innerHTML = minutes;
-      document.getElementById("hourTop").innerHTML = hours;
-      document.getElementById("hourBottom").innerHTML = hours;
-      document.getElementById("dayTop").innerHTML = days;
-      document.getElementById("dayBottom").innerHTML = days;
+      (document.getElementById("minBottom") as HTMLElement).innerHTML = minutes.toString();
+      (document.getElementById("minTop") as HTMLElement).innerHTML = minutes.toString();
+      (document.getElementById("hourTop") as HTMLElement).innerHTML = hours.toString();
+      (document.getElementById("hourBottom") as HTMLElement).innerHTML = hours.toString();
+      (document.getElementById("dayTop")as HTMLElement ).innerHTML = days.toString();
+      (document.getElementById("dayBottom") as HTMLElement).innerHTML = days.toString();
     }, 1000);
 
     return () => clearInterval(loop);
