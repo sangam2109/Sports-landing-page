@@ -39,10 +39,10 @@ const Events = () => {
             </p>
           </div>
         </div>
-        <div className="m-4 flex items-center">
+        <div className="p-4 flex items-center">
           <Register />
         </div>
-        <div className="m-4 " id="Event">
+        <div className="p-4 flex justify-center" id="Event">
           <Card className="max-w-[400px] bg-lightY">
             <CardHeader className="flex gap-3 justify-center">
               <div className="flex flex-col ">
@@ -50,7 +50,7 @@ const Events = () => {
               </div>
             </CardHeader>
             <Divider />
-            <CardBody className="h-[26vh] text-lg p-6">
+            <CardBody className="h-[22vh] text-lg p-6">
               <p>
                 A diverse array of events awaits participants of all interests
                 and abilities.

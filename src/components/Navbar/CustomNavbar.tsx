@@ -72,7 +72,7 @@ const CustomNavbar = () => {
           </NavbarItem>
         </NavbarContent>
 
-        <NavbarMenu className="bg-">
+        <NavbarMenu className="bg-dark">
           <NavbarMenuItem>
             {NavItems.Items.map((item) => {
               return (

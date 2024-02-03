@@ -14,8 +14,11 @@ export const Footer = () => {
             Your All in one Athletic Meet Registration App
           </p>
           <ul className="flex  items-center justify-center lg:justify-start gap-6 mt-8 font-normal">
-            <li>Home</li>
-            <li>Events</li>
+            <a href="#Home">
+              <li>Home</li>
+            </a>
+            <a href="#Event">
+            <li>Events</li></a>
             <li>Contact Us</li>
           </ul>
         </div>
@@ -25,7 +28,7 @@ export const Footer = () => {
           <Button
             className="text-white w-[80vw] max-w-[240px]"
             variant="bordered"
-            onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
+            // onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
           >
             <img width={45} src={ALogo} alt="" />
             Android
@@ -34,7 +37,7 @@ export const Footer = () => {
             className="w-[80vw] max-w-[240px]"
             variant="shadow"
             color="primary"
-            onClick={()=>{window.open("https://www.gndecathletix.games")}}
+            // onClick={()=>{window.open("https://www.gndecathletix.games")}}
           >
             <FaApple size={21} />
             IOS
@@ -45,7 +48,14 @@ export const Footer = () => {
       <section className="bg-[#212121] w-full text-white flex flex-col  items-center p-4">
         <div className="">
           {/* <h1 className="text-xl text-center font-bold">GNDEC ATHLETIX</h1> */}
-          <p className="text-center opacity-60"  onClick={()=>{window.open("https://info.gndecathletix.games")}}>© 2024 gndecathletix.games</p>
+          <p
+            className="text-center opacity-60"
+            onClick={() => {
+              window.open("https://info.gndecathletix.games");
+            }}
+          >
+            © 2024 gndecathletix.games
+          </p>
           {/* <ul className="flex  items-center justify-center gap-6 mt-14 font-normal">
                         <li>Home</li>
                         <li>Events</li>
