@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-         {/* Right Section */}
+        {/* Right Section */}
         <div className="flex flex-col md:flex-col items-center ">
           <h3 className="font-bold text-4xl text-white text-xl opacity-90 mt-12">
             Download the app
@@ -36,12 +36,7 @@ const Hero: React.FC = () => {
               className="w-[80vw] md:w-fit px-8 text-white max-w-[240px]"
               variant="bordered"
             >
-              <img
-                width={40}
-                src={ALogo}
-                alt=""
-                className="text-white"
-              />
+              <img width={40} src={ALogo} alt="" className="text-white" />
               Android
             </Button>
             <Button
@@ -49,15 +44,11 @@ const Hero: React.FC = () => {
               color="primary"
               variant="shadow"
             >
-              {/* <img width={20} src={FaApple} alt="" /> */}
               <FaApple size={21} />
               IOS
             </Button>
           </div>
-          {/* </div> */}
         </div>
-
-       
       </div>
     </div>
   );
