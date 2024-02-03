@@ -22,11 +22,18 @@ export const Footer = () => {
 
         <div className="right flex flex-col items-center gap-2 mt-8">
           <h3 className="font-bold mr-auto">Get the app</h3>
-          <Button className="bg-white w-[80vw] max-w-[240px]">
+          <Button
+            className="bg-white w-[80vw] max-w-[240px]"
+            variant="bordered"
+          >
             <img width={45} src={ALogo} alt="" />
             Android
           </Button>
-          <Button className="bg-white w-[80vw] max-w-[240px]">
+          <Button
+            className="w-[80vw] max-w-[240px]"
+            variant="shadow"
+            color="primary"
+          >
             <FaApple size={21} />
             IOS
           </Button>

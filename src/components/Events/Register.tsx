@@ -19,7 +19,7 @@ import {
 export default function Register(){
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     return(
-        <Card className="max-w-[400px] ">
+        <Card className="max-w-[400px] bg-lightY">
             <CardHeader className="flex gap-3 justify-center">
               <div className="flex flex-col">
                 <h2 className="text-xl">How to Register</h2>
