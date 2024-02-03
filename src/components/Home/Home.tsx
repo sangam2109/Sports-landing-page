@@ -4,7 +4,7 @@ import { Image } from "@nextui-org/react";
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-dark relative w-full h-auto overflow-hidden">
+    <div id="Home" className="bg-dark relative w-full h-auto overflow-hidden">
       <div className="aspect-w-16 aspect-h-9">
         <Image
           src={background}

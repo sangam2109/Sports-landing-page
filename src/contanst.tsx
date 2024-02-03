@@ -159,6 +159,11 @@ export const NavItems = {
       key:"4",
       heading: "FAQs",
       href:"#FAQ" 
+    },
+    {
+      key:"5",
+      heading: "Contact Us",
+      href:"" 
     }
   ]
 }
