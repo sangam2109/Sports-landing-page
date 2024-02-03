@@ -187,7 +187,7 @@ export const NavItems = {
     {
       key: "5",
       heading: "Contact Us",
-      // href:""
+      href:"https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit"
     },
   ],
 };

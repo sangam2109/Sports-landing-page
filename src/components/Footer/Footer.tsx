@@ -20,7 +20,8 @@ export const Footer = () => {
             <a href="#Event">
               <li>Events</li>
             </a>
-            <li>Contact Us</li>
+            <a href="https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit">
+            <li>Contact Us</li></a>
           </ul>
         </div>
 

@@ -136,7 +136,7 @@ const Time = () => {
 
   return (
     <div className="" id="body">
-      <div className="flex flex-col text-lightB items-center text-3xl font-bold mb-8">
+      <div className="flex flex-col text-lightB items-center text-3xl font-bold mb-8 md:text-7xl ">
         Registration Starts After
       </div>
       <main className="center" id="timer">
@@ -183,7 +183,7 @@ const Time = () => {
           <div className="circle-2"></div>
         </div>
       </main>
-      <main id="titleTimer" className="text-3xl font-bold mb-8">
+      <main id="titleTimer" className=" font-bold mb-8">
         <h1>Day</h1>
         <h1>Hour</h1>
         <h1>Min</h1>

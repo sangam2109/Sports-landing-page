@@ -66,7 +66,7 @@ const CustomNavbar = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" className="text-inherit" href="#FAQ">
+            <Link color="foreground" className="text-inherit" href="https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit">
               Contact Us
             </Link>
           </NavbarItem>

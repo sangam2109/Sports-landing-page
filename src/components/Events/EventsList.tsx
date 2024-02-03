@@ -25,21 +25,21 @@ const Events = () => {
 
   return (
     <div className="bg-[#1f2937] pt-12 ">
-      <Carousel showArrows= {true}>
-        <div className="max-w-[400vh] m-8 ">
-          <div className="text-3xl text-yellow font-bold">
+      <Carousel showArrows= {true} selectedItem={2}>
+        <div className="max-w-[400vh] m-8  ">
+          <div className="text-3xl  text-yellow font-bold md:text-6xl">
             <h2>
               Welcome to the Annual Athletic Meet-2024
             </h2>
           </div>
-          <div className="text-xl text-lightY m-4 p-4">
+          <div className="text-xl text-lightY m-4 p-4 md:text-5xl">
             <p>
               We are excited to have you join the GNDEC Athletic Meet-2024,
               where we celebrate sports. teamwork and fun!
             </p>
           </div>
         </div>
-        <div className="p-4 flex items-center">
+        <div className="p-4 flex justify-center">
           <Register />
         </div>
         <div className="p-4 flex justify-center" id="Event">
@@ -50,7 +50,7 @@ const Events = () => {
               </div>
             </CardHeader>
             <Divider />
-            <CardBody className="h-[22vh] text-lg p-6">
+            <CardBody className="h-[22vh] text-lg p-6 md:p-12 md:h-[20vh] ">
               <p>
                 A diverse array of events awaits participants of all interests
                 and abilities.

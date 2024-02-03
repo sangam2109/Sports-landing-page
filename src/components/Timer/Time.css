@@ -8,15 +8,45 @@ main {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  
 #titleTimer {
   gap: 9vw;
-}
+}}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  #titleTimer {
+    gap: 11vw;
+  }}
+  @media (min-width: 1024px) {
+  
+    #titleTimer {
+      gap: 15vw;
+    }}
+
+@media (max-width: 767px) {
+  
+  #titleTimer h1 {
+    font-size: x-large;
+  }}
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    
+    #titleTimer h1 {
+      font-size: xx-large;
+    }}
+    @media (min-width: 1024px) {
+    
+      #titleTimer h1 {
+        font-size: 48px;
+      }}
 #titleTimer h1 {
   /* width: 10vw; */
   text-align: center;
   color: #dda15e;
 
-  font-size: x-large;
+ 
   font-family: "Orbitron", sans-serif;
 }
 #first,
@@ -124,6 +154,44 @@ a {
   font-size: xxx-large;
   overflow: hidden;
   /* border-radius: 2px; */
+}
+
+@media (max-width: 767px) {
+  .top,
+  .bottom,
+  .flipCard .bottom-flip,
+  .flipCard .top-flip {
+    height: 0.9em;padding: 0.4em;
+    width: 18vw;
+    font-size:12p;
+    /* Adjust styles for smaller screens */
+  }
+}
+
+/* Media query for screens between 768px and 1023px (tablets landscape) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top,
+  .bottom,
+  .flipCard .bottom-flip,
+  .flipCard .top-flip {
+    height: 0.9em;
+    width: 16vw;
+    font-size: larger;
+    /* Adjust styles for medium-sized screens */
+  }
+}
+
+/* Media query for screens larger than 1023px (desktops) */
+@media (min-width: 1024px) {
+  .top,
+  .bottom,
+  .flipCard .bottom-flip,
+  .flipCard .top-flip {
+    height: 0.9em;
+    width: 18vw;
+    font-size: 84px;
+    /* Adjust styles for larger screens */
+  }
 }
 
 .top,
