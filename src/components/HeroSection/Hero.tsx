@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             <Button
               className="w-[80vw] md:w-fit px-8 text-white max-w-[240px]"
               variant="bordered"
-              onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
+              // onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
             >
               <img width={40} src={ALogo} alt="" className="text-white" />
               Android
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
               className="w-[80vw] md:w-fit px-8 text-white max-w-[240px]  "
               color="primary"
               variant="shadow"
-              onClick={()=>{window.open("https://www.gndecathletix.games")}}
+              // onClick={()=>{window.open("https://www.gndecathletix.games")}}
             >
               <FaApple size={21} />
               IOS

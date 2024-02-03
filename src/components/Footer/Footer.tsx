@@ -25,7 +25,7 @@ export const Footer = () => {
           <Button
             className="text-white w-[80vw] max-w-[240px]"
             variant="bordered"
-            onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
+            // onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
           >
             <img width={45} src={ALogo} alt="" />
             Android
@@ -34,7 +34,7 @@ export const Footer = () => {
             className="w-[80vw] max-w-[240px]"
             variant="shadow"
             color="primary"
-            onClick={()=>{window.open("https://www.gndecathletix.games")}}
+            // onClick={()=>{window.open("https://www.gndecathletix.games")}}
           >
             <FaApple size={21} />
             IOS
