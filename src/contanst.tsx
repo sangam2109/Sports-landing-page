@@ -55,19 +55,42 @@ export const FAQS = {
         "During registration, you'll need to provide key information such as your college email (ending with @gndec.ac.in), phone number, name, password, and gender details. This ensures that only eligible students can access the system.",
     },
     {
-      title: "Can I access the registration app from my mobile device?",
+      title: "When and where can I obtain my QR code or chest number?",
       content:
-        "Yes, the app is mobile-friendly. You can access the registration process seamlessly from your mobile device, ensuring convenience for on-the-go participation.",
+        "You can collect your QR codes and chest numbers starting from 19th February, near the sports department. The distribution timings are scheduled after 12:30 PM. Be sure to check for updates and grab your essentials for the event during this time.",
     },
     {
-      title: "Are there specific events for my course or branch?",
+      title: "How can I find my jersey number and QR code?",
       content:
-        "Yes, the app collects academic details during registration. This information is used to categorize participants, and some events may be exclusive to specific courses or branches. Ensure your academic details are accurate for eligibility.",
+        "To locate your jersey number and QR code, click on your profile in the top right corner of the app. There, you'll be able to access and view your jersey number as well as your personal QR code.",
     },
     {
-      title: "How does the verification process work?",
+      title: "When can I expect to receive my sports certificate?",
       content:
-        "After registration, you'll receive a verification email at your college email address. Click the verification link to confirm your email's authenticity. This step ensures data integrity and security, allowing only eligible students to access the system.",
+        "You can anticipate receiving your sports certificate for the specific event approximately one week after the conclusion of the sports meet. The certificates will be available for download directly from the sports meet app, providing you with convenient access to your achievements.",
+    },
+    {
+      title:
+        "Where can I find the list of winners for the events I participated in?",
+      content:
+        "To see the winners of the events you participated in, simply go to the 'WINNERS' section in the menu. There, you'll find the information about the individuals or teams who emerged victorious in the events you were a part of.",
+    },
+    {
+      title:
+        "How can I find information about when and where my event will start?",
+      content:
+        "To check the schedule of your event, head to the 'ANNOUNCEMENTS' section in the sports meet app's menu. All the relevant details will be available there. Additionally, you'll receive timely notifications on your phone with event updates. To ensure you receive these notifications, make sure to grant access for notifications in the app settings.",
+    },
+
+    {
+      title: "What is the process for verification?",
+      content:
+        "To verify yourself as a GNDEC student, you'll need to follow a simple process. During signup, an OTP (One-Time Password) will be sent to your GNDEC email. You'll be asked to enter this OTP to complete the verification and ensure that you are a genuine GNDEC student.",
+    },
+    {
+      title: "What is the process for enrolling in events?",
+      content:
+        "To enroll in events, navigate to the 'EVENTS' section in the menu. Choose your desired events from there. You can view your enrollments in the 'MY ENROLLMENTS' section. Keep in mind that you can select up to three events only – two track events and one field event, or vice versa.",
     },
     {
       title: "What academic details are required, and why?",
@@ -77,8 +100,9 @@ export const FAQS = {
     {
       title: "Can I participate in multiple events?",
       content:
-        "Yes, you can select and participate in multiple events based on your interests and eligibility. The app allows you to customize your athletic meet experience.",
+        "You have the option to participate in up to 2 field events and 1 track event, or vice versa. This allows you to engage in a variety of activities and make the most of your participation.",
     },
+
     // Add more FAQs for students as needed
   ],
 };
@@ -141,29 +165,29 @@ export const RegisterSteps = {
 export const NavItems = {
   Items: [
     {
-      key:"1",
+      key: "1",
       heading: "Home",
-      href:"#" 
+      href: "#",
     },
     {
-      key:"2",
+      key: "2",
       heading: "Events",
-      href:"#Event" 
+      href: "#Event",
     },
     {
-      key:"3",
+      key: "3",
       heading: "Dev Team",
-      href:"#DevTeam" 
+      href: "#DevTeam",
     },
     {
-      key:"4",
+      key: "4",
       heading: "FAQs",
-      href:"#FAQ" 
+      href: "#FAQ",
     },
     {
-      key:"5",
+      key: "5",
       heading: "Contact Us",
-      href:"" 
-    }
-  ]
-}
+      // href:""
+    },
+  ],
+};
