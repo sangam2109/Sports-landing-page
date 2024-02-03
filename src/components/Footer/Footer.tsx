@@ -22,14 +22,19 @@ export const Footer = () => {
 
         <div className="right flex flex-col items-center gap-2 mt-8">
           <h3 className="font-bold mr-auto">Get the app</h3>
-          <Button className="bg-white w-[80vw] max-w-[240px]"
-              onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
+          <Button
+            className="text-white w-[80vw] max-w-[240px]"
+            variant="bordered"
+            onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
           >
             <img width={45} src={ALogo} alt="" />
             Android
           </Button>
-          <Button className="bg-white w-[80vw] max-w-[240px]"
-          onClick={()=>{window.open("https://www.gndecathletix.games")}}
+          <Button
+            className="w-[80vw] max-w-[240px]"
+            variant="shadow"
+            color="primary"
+            onClick={()=>{window.open("https://www.gndecathletix.games")}}
           >
             <FaApple size={21} />
             IOS

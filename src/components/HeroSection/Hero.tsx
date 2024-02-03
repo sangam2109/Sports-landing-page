@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-         {/* Right Section */}
+        {/* Right Section */}
         <div className="flex flex-col md:flex-col items-center ">
           <h3 className="font-bold text-4xl text-white text-xl opacity-90 mt-12">
             Download the app
@@ -37,12 +37,7 @@ const Hero: React.FC = () => {
               variant="bordered"
               onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
             >
-              <img
-                width={40}
-                src={ALogo}
-                alt=""
-                className="text-white"
-              />
+              <img width={40} src={ALogo} alt="" className="text-white" />
               Android
             </Button>
             <Button
@@ -51,15 +46,11 @@ const Hero: React.FC = () => {
               variant="shadow"
               onClick={()=>{window.open("https://www.gndecathletix.games")}}
             >
-              {/* <img width={20} src={FaApple} alt="" /> */}
               <FaApple size={21} />
               IOS
             </Button>
           </div>
-          {/* </div> */}
         </div>
-
-       
       </div>
     </div>
   );
