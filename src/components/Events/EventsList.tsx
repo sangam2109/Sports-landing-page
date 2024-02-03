@@ -25,7 +25,7 @@ const Events = () => {
 
   return (
     <div className="bg-[#1f2937] pt-12 ">
-      <Carousel showArrows= {true} selectedItem={2}>
+      <Carousel showArrows= {true} >
         <div className="max-w-[400vh] m-8  ">
           <div className="text-3xl  text-yellow font-bold md:text-6xl">
             <h2>
@@ -50,7 +50,7 @@ const Events = () => {
               </div>
             </CardHeader>
             <Divider />
-            <CardBody className="h-[22vh] text-lg p-6 md:p-12 md:h-[20vh] ">
+            <CardBody className="h-[22vh] text-lg p-6 md:p-12 md:h-[10vh] ">
               <p>
                 A diverse array of events awaits participants of all interests
                 and abilities.
