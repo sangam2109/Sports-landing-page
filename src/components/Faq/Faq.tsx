@@ -4,7 +4,7 @@ import CustAccordion from "../custom/Accordian";
 
 export const FAQ = () => {
   return (
-    <section id="FAQ" className="mb-4 px-2">
+    <section id="faq" className="mb-4 px-2">
       <h1 className="text-3xl text-center text-[#263238] font-bold mt-10">
         Frequent questions
       </h1>

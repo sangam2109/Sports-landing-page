@@ -14,7 +14,7 @@ export const Footer = ({setSelectedCard}:any) => {
           <p className="text-center opacity-80 md:text-start">
             Your All in one Athletic Meet Registration App
           </p>
-          <ul className="flex  items-center justify-center lg:justify-start gap-6 mt-8 font-normal">
+          <ul className="flex flex-wrap  items-center justify-center lg:justify-start gap-6 mt-8 font-normal">
             <a href="#Home">
               <li>Home</li>
             </a>

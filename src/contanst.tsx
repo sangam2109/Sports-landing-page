@@ -186,11 +186,6 @@ export const NavItems = {
     },
     {
       key: "5",
-      heading: "FAQs",
-      href: "#FAQ",
-    },
-    {
-      key: "6",
       heading: "Contact Us",
       href:"https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit"
     },
