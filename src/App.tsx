@@ -19,7 +19,7 @@ function App() {
 
       <DevTeam />
       <FAQ />
-      <Footer />
+      <Footer setSelectedCard={setSelectedCard} />
     </>
   );
 }

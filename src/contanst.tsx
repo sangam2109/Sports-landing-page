@@ -113,12 +113,12 @@ export const RegisterSteps = {
       content: (
         <>
           Download the App{" "}
-          <a
+          {/* <a
             href="https://greetings-six.vercel.app/app-debug.apk"
             className="text-primary underline"
           >
             Download now
-          </a>
+          </a> */}
           .
         </>
       ),
@@ -132,9 +132,9 @@ export const RegisterSteps = {
       content: (
         <>
           If you don't have college email id then go to{" "}
-          <a className="text-primary" href="">
+          <a className="text-primary" target="_blank" href="https://forms.gle/sa4sEssnonS95bPy6">
             Help Section
-          </a>{" "}
+          </a>
           and Fill the Form.
         </>
       ),
@@ -153,7 +153,7 @@ export const RegisterSteps = {
     {
       key: "6",
       content:
-        "Please choose carefully, as we will not be able to accommodate any changes requested by you in the.future.",
+        "Please choose carefully, as we will not be able to accommodate any changes requested by you in the future.",
     },
     {
       key: "7",

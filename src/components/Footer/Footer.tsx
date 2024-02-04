@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "@nextui-org/react";
 import { FaApple } from "react-icons/fa";
 import ALogo from "../../assets/android-logo.png";
 
-export const Footer = () => {
+export const Footer = ({setSelectedCard}:any) => {
   return (
     <footer className="bg-[#212121]">
       <section className="bg-[#212121] w-full  text-white flex flex-col justify-between items-center md:flex-row p-8">
@@ -17,11 +18,27 @@ export const Footer = () => {
             <a href="#Home">
               <li>Home</li>
             </a>
-            <a href="#Event">
+            <a
+            onClick={()=>{
+                setSelectedCard(1);document.getElementById('EventListCont')?.scrollIntoView({behavior:'smooth', block:'center'})
+            }}
+            href="#howToRegister">
+              <li>How to Register</li>
+            </a>
+            <a
+            onClick={()=>{
+                setSelectedCard(2);document.getElementById('EventListCont')?.scrollIntoView({behavior:'smooth', block:'center'})
+            }}
+             
+            href="#EventDetails">
               <li>Events</li>
             </a>
+            <a href="#DevTeam">
+              <li>Dev Team</li>
+            </a>
             <a href="https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit">
-            <li>Contact Us</li></a>
+            <li>Contact Us</li>
+            </a>
           </ul>
         </div>
 
