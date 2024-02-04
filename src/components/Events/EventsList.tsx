@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Register from "./Register";
@@ -20,16 +21,16 @@ import {
 import { FemaleEvents, MaleEvents } from "../../contanst";
 import Time from "../Timer/Time";
 
-const Events = () => {
+const Events = ({SelectedCARD}:any) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <div className="bg-[#1f2937] pt-12 ">
-      <Carousel showArrows= {true} >
-        <div className="max-w-[400vh] m-8  ">
+    <div className="bg-[#1f2937] pt-12 EventListCont" >
+      <Carousel  showArrows= {true}  selectedItem={SelectedCARD}>  
+        <div className="max-w-[400vh] m-8" id="EventListCont">
           <div className="text-3xl  text-yellow font-bold md:text-6xl">
             <h2>
-              Welcome to the Annual Athletic Meet-2024
+              Welcome to the GNDEC Annual Athletic Meet-2024
             </h2>
           </div>
           <div className="text-xl text-lightY m-4 p-4 md:text-5xl">
@@ -50,7 +51,7 @@ const Events = () => {
               </div>
             </CardHeader>
             <Divider />
-            <CardBody className="h-[22vh] text-lg p-6 md:p-12 md:h-[10vh] ">
+            <CardBody className=" text-lg p-4 md:p-12  ">
               <p>
                 A diverse array of events awaits participants of all interests
                 and abilities.
@@ -59,7 +60,7 @@ const Events = () => {
             <Divider />
             <CardFooter className="flex justify-end">
               <Button onPress={onOpen} color="primary" className="bg-yellow">
-                Know More !
+                All Events
               </Button>
               <Modal
                 isOpen={isOpen}

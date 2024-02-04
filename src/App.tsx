@@ -5,14 +5,17 @@ import Hero from "./components/HeroSection/Hero";
 import CustomNavbar from "./components/Navbar/CustomNavbar"
 import Home from "./components/Home/Home";
 import Events from "./components/Events/EventsList";
+import { useState } from "react";
 
 function App() {
+  const [SelectedCARD, setSelectedCard] = useState();
+
   return (
     <>
-      <CustomNavbar />
+      <CustomNavbar setSelectedCard={setSelectedCard}/>
       <Home />
       <Hero />
-      <Events />
+      <Events SelectedCARD={SelectedCARD}/>
 
       <DevTeam />
       <FAQ />

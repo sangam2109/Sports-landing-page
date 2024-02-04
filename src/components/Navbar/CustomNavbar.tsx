@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import {
   Navbar,
@@ -13,7 +14,7 @@ import {
 import GndecAthletix from "../../assets/favicon.png";
 import { NavItems } from "../../contanst";
 
-const CustomNavbar = () => {
+const CustomNavbar = ({setSelectedCard}:any) => {
     const [isMenuOpen, setIsMenuOpen] = React.useReducer(
       (current) => !current,
       false
@@ -49,7 +50,19 @@ const CustomNavbar = () => {
             <Link
               color="foreground"
               className="text-inherit"
-              href="#Event"
+              style={{cursor:'pointer'}}
+              onClick={()=>{setSelectedCard(1);document.getElementById('EventListCont')?.scrollIntoView({behavior:'smooth', block:'center'})}}
+              aria-current="page"
+            >
+              How to Register
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              color="foreground"
+              className="text-inherit"
+              style={{cursor:'pointer'}}
+              onClick={()=>{setSelectedCard(2);document.getElementById('EventListCont')?.scrollIntoView({behavior:'smooth', block:'center'})}}
               aria-current="page"
             >
               Event
@@ -80,6 +93,15 @@ const CustomNavbar = () => {
                   key={item.key}
                   className="text-white mt-4 block text-center"
                   href={item.href}
+                  style={{cursor:'pointer'}}
+                  onClick={()=>{
+                    if(item.key == "2"){
+                      setSelectedCard(1);document.getElementById('EventListCont')?.scrollIntoView({behavior:'smooth', block:'center'})
+                    }
+                    if(item.key == "3"){
+                      setSelectedCard(2);document.getElementById('EventListCont')?.scrollIntoView({behavior:'smooth', block:'center'})
+                    }
+                  }}
                   size="lg"
                   onPress={() => setIsMenuOpen()}
                 >

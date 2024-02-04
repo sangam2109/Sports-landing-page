@@ -35,7 +35,7 @@ export default function Register() {
       <Divider />
       <CardFooter className="flex justify-end">
         <Button onPress={onOpen} color="primary" className="bg-yellow">
-          Know More !
+          Register now !
         </Button>
         <Modal
           isOpen={isOpen}

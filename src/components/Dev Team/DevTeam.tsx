@@ -65,7 +65,7 @@ const DevTeam: React.FC = () => {
     <section id="DevTeam" className="">
       <div>
         <div className="text-3xl flex justify-center mt-8 font-bold">
-          Contributers
+          Dev Team
         </div>
         <div className=" flex flex-wrap justify-center gap-2">
           {teamMembers.map((member, index) => (

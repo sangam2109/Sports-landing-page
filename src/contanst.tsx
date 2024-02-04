@@ -57,7 +57,7 @@ export const FAQS = {
     {
       title: "When and where can I obtain my QR code or chest number?",
       content:
-        "You can collect your QR codes and chest numbers starting from 19th February, near the sports department. The distribution timings are scheduled after 12:30 PM. Be sure to check for updates and grab your essentials for the event during this time.",
+        "You can collect your QR codes and chest numbers starting from 19th February, near the sports department. The distribution timings are scheduled after 3:00 PM. Be sure to check for updates and grab your essentials for the event during this time.",
     },
     {
       title: "How can I find my jersey number and QR code?",
@@ -67,19 +67,19 @@ export const FAQS = {
     {
       title: "When can I expect to receive my sports certificate?",
       content:
-        "You can anticipate receiving your sports certificate for the specific event approximately one week after the conclusion of the sports meet. The certificates will be available for download directly from the sports meet app, providing you with convenient access to your achievements.",
+        "You can anticipate receiving your sports certificate for the specific event approximately one week after the conclusion of the sports meet. The certificates will be available for download directly from the GNDEC ATHLETIX app, providing you with convenient access to your achievements.",
     },
     {
       title:
-        "Where can I find the list of winners for the events I participated in?",
+        "Where can I find the list of winners for the events?",
       content:
-        "To see the winners of the events you participated in, simply go to the 'WINNERS' section in the menu. There, you'll find the information about the individuals or teams who emerged victorious in the events you were a part of.",
+        "To see the winners of the events you participated in, simply go to the 'WINNERS' section in the menu. There, you'll find the information about the individuals or teams who emerged victorious in the events.",
     },
     {
       title:
         "How can I find information about when and where my event will start?",
       content:
-        "To check the schedule of your event, head to the 'ANNOUNCEMENTS' section in the sports meet app's menu. All the relevant details will be available there. Additionally, you'll receive timely notifications on your phone with event updates. To ensure you receive these notifications, make sure to grant access for notifications in the app settings.",
+        "To check the schedule of your event, head to the 'ANNOUNCEMENTS' section in the GNDEC ATHLETIX app's menu. All the relevant details will be available there. Additionally, you'll receive timely notifications on your phone with event updates. To ensure you receive these notifications, make sure to grant access for notifications in the app settings.",
     },
 
     {
@@ -171,21 +171,26 @@ export const NavItems = {
     },
     {
       key: "2",
-      heading: "Events",
-      href: "#Event",
+      heading: "How to Register",
+      href: "#howtoregister",
     },
     {
       key: "3",
+      heading: "Events",
+      href: "#eventsdetails",
+    },
+    {
+      key: "4",
       heading: "Dev Team",
       href: "#DevTeam",
     },
     {
-      key: "4",
+      key: "5",
       heading: "FAQs",
       href: "#FAQ",
     },
     {
-      key: "5",
+      key: "6",
       heading: "Contact Us",
       href:"https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit"
     },

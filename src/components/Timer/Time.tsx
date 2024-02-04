@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect } from "react";
 // import { Chip } from "@nextui-org/react";
 import "./Time.css";
@@ -65,8 +66,8 @@ const Time = () => {
     const loop = setInterval(() => {
       const date = new Date().getTime();
       const distance = LaunchDate - date;
-      let days: any = Math.floor(distance / (1000 * 60 * 60 * 24));
-      let hours: any = Math.floor(
+      let days:any = Math.floor(distance / (1000 * 60 * 60 * 24));
+      let hours:any = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
       let minutes: any = Math.floor(
@@ -135,7 +136,7 @@ const Time = () => {
   }, []);
 
   return (
-    <div className="" id="body">
+    <div className="Timerbody" id="body">
       <div className="flex flex-col text-lightB items-center text-3xl font-bold mb-8 md:text-7xl ">
         Registration Starts After
       </div>

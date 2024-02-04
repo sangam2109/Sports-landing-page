@@ -15,16 +15,16 @@ const Home: React.FC = () => {
       <div className="absolute inset-0 flex flex-row items-center justify-center text-center md:flex flex-col">
         <div className="w-full h-auto ">
           <h1 className="text-6xl text-lightY mt-12 font-bold md:text-8xl">
-            {" "}
             GNDEC ATHLETIX
           </h1>
-        </div>
-        <div className="text-xl m-8 pt-8 text-lightY md:text-4xl ">
-          Elevate your athletic experience with the Gndec Athletix App. Track
-          your progress, set goals, and stay connected with the community.
-        </div>
+      </div>
+      <div className="text-xl m-8 pt-8 text-lightY md:text-4xl ">
+        Elevate your athletic experience with the <b>GNDEC ATHLETIX App.</b> Your All in one Athletic Meet Registration App
+
+
       </div>
     </div>
+    </div >
   );
 };
 export default Home;

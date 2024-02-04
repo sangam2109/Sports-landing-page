@@ -1,6 +1,11 @@
 .animate__animated.animate__flipInX {
   --animate-duration: 0.7s;
 }
+
+
+.Timerbody{
+  scroll-padding-top: 50px;
+}
 main {
   display: flex;
   flex-flow: row;
