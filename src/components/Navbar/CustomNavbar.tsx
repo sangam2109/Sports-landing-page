@@ -65,7 +65,7 @@ const CustomNavbar = ({setSelectedCard}:any) => {
               onClick={()=>{setSelectedCard(2);document.getElementById('EventListCont')?.scrollIntoView({behavior:'smooth', block:'center'})}}
               aria-current="page"
             >
-              Event
+              Events
             </Link>
           </NavbarItem>
           <NavbarItem>
