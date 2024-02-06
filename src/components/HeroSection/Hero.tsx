@@ -35,8 +35,8 @@ const Hero: React.FC = () => {
               <Button
                 className="w-[80vw] md:w-fit px-8 text-white max-w-[240px]"
                 variant="bordered"
-                // onClick={()=>{document.getElementById('body')?.scrollIntoView({behavior:'smooth', block:'center'})}}
-                onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
+                onClick={()=>{document.getElementById('body')?.scrollIntoView({behavior:'smooth', block:'center'})}}
+            //    onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
               >
                 
                 <img width={40} src={ALogo} alt="" className="text-white" />
