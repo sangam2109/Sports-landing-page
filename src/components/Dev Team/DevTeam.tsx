@@ -18,13 +18,14 @@ import "./DevTeam.css";
 // Sample data for team members
 const teamMembers = [
   {
-    name: "Inderpreet Singh",
-    description: "UI/UX Developer",
-    linkedin: "https://www.linkedin.com/in/inderpreet-singh13/",
-    github: "https://github.com/Inder-singh001",
-    portfolio: "https://www.instagram.com/_.inderpreet_singh._/",
-    personImage: inderpreet, // Adjust image path accordingly
+    name: "Rajveer Singh",
+    description: "Full Stack Developer",
+    linkedin: "https://www.linkedin.com/in/rajveer-singh-sidhu-534a25232",
+    github: "https://github.com/rajveer810214",
+    portfolio: "https://rajveersidhu.vercel.app",
+    personImage: Rajveer, // Adjust image path accordingly
   },
+  
   {
     name: "Vansh Kumar",
     description: "Full Stack Developer",
@@ -42,13 +43,14 @@ const teamMembers = [
     personImage: Sangam, // Adjust image path accordingly
   },
   {
-    name: "Rajveer Singh",
-    description: "Full Stack Developer",
-    linkedin: "https://www.linkedin.com/in/rajveer-singh-sidhu-534a25232",
-    github: "https://github.com/rajveer810214",
-    portfolio: "https://rajveersidhu.vercel.app",
-    personImage: Rajveer, // Adjust image path accordingly
+    name: "Inderpreet Singh",
+    description: "UI/UX Developer",
+    linkedin: "https://www.linkedin.com/in/inderpreet-singh13/",
+    github: "https://github.com/Inder-singh001",
+    portfolio: "https://www.instagram.com/_.inderpreet_singh._/",
+    personImage: inderpreet, // Adjust image path accordingly
   },
+  
   {
     name: "Saksham Kohli",
     description: "Researcher",
