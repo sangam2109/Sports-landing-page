@@ -37,8 +37,8 @@ const Time = () => {
       flipCard.appendChild(BottomFlip);
     };
 
-    if (localStorage.key(0) !== "May 5, 2024 00:00:00") {
-      localStorage.setItem("Date", "February 16, 2024 08:00:00");
+    if (localStorage.key(0) !== "February 16, 2024 15:00:00") {
+      localStorage.setItem("Date", "February 16, 2024 15:00:00");
     }
     // const Countdown = () => {
     //   if (!countdown) {
