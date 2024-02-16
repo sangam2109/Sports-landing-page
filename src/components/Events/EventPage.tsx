@@ -8,11 +8,12 @@ export default function App() {
   return (
     <div id="EventSection" className="flex w-full flex-col">
       <div className="bg-[#1f2937] p-4 flex justify-center">
-        <h1 className="text-yellow text-4xl">video tutorials </h1>
+        <h1 className="text-yellow text-4xl font-bold">Tutorial</h1>
       </div>
       <Tabs
         className="m-auto w-full text-white justify-center"
         aria-label="Dynamic tabs"
+
         
       >
         <Tab
