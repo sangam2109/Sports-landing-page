@@ -121,7 +121,7 @@ const Events = ({SelectedCARD}:any) => {
           </Card>
         </div>
       </Carousel>
-      <div className="">
+      <div className="bg-dark">
         <Time />
       </div>
     </div>
