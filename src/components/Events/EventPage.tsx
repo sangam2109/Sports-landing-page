@@ -8,13 +8,12 @@ export default function App() {
   return (
     <div id="EventSection" className="flex w-full flex-col">
       <div className="bg-[#1f2937] p-4 flex justify-center">
-        <h1 className="text-yellow text-4xl font-bold">Tutorial</h1>
+        <h1 className="text-yellow text-4xl">App Registration Guide</h1>
       </div>
       <Tabs
         className="m-auto w-full text-white justify-center"
         aria-label="Dynamic tabs"
-
-        
+        color="warning"
       >
         <Tab
         
@@ -23,7 +22,7 @@ export default function App() {
           title={
             <div className="flex items-center space-x-2">
               {/* <GalleryIcon/> */}
-              <span className="text-lg text-[#e4e4e4] font-semibold">
+              <span className="text-lg text-[black] font-semibold">
                 English
               </span>
             </div>
@@ -32,7 +31,7 @@ export default function App() {
           <Card className="w-[95vw] md:w-[80vw] max-w-[900px m-auto bg-opacity-80">
             <CardBody className="p-3">
               <iframe
-                height="280"
+                height="400"
                 src="https://www.youtube.com/embed/Geu4QZLzKp0"
                 title="How to Register on GNDEC ATHLETIX App | GNDEC SPORTS"
                 className="w-[95%] m-auto  rounded-2xl"
@@ -48,7 +47,7 @@ export default function App() {
           title={
             <div className="flex items-center space-x-2">
               {/* <MusicIcon/> */}
-              <span className="text-lg text-[#e4e4e4] font-semibold font-semibold ">
+              <span className="text-lg text-[black] font-semibold font-semibold ">
                 Punjabi
               </span>
             </div>
@@ -57,7 +56,7 @@ export default function App() {
           <Card className="w-[95vw] md:w-[80vw] max-w-[900px m-auto bg-opacity-80">
             <CardBody className="p-3">
               <iframe
-                height="280"
+                height="400"
                 src="https://www.youtube.com/embed/-W2LIjWljJ0"
                 title="How to Register on GNDEC ATHLETIX App | GNDEC SPORTS (In Punjabi)"
                 className="w-[95%] m-auto  rounded-2xl"
