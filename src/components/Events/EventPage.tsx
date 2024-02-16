@@ -53,7 +53,7 @@ export default function App() {
             </div>
           }
         >
-          <Card className="w-[95vw] md:w-[80vw] max-w-[900px m-auto bg-opacity-80]">
+          <Card className="w-[95vw] md:w-[80vw] max-w-[900px m-auto  bg-opacity-80]">
             <CardBody className="p-3">
               <iframe
                 height="280"
