@@ -13,6 +13,7 @@ import Vansh from "../../assets/vansh.avif";
 import Rajveer from "../../assets/rajveer.png";
 import inderpreet from "../../assets/inderpreet.jpg";
 import Saksham from "../../assets/Saksham.jpg"
+import Tashneet from "../../assets/tashneet.jpg"
 import "./DevTeam.css";
 
 // Sample data for team members
@@ -25,7 +26,7 @@ const teamMembers = [
     portfolio: "https://rajveersidhu.vercel.app",
     personImage: Rajveer, // Adjust image path accordingly
   },
-  
+
   {
     name: "Vansh Kumar",
     description: "Full Stack Developer",
@@ -50,7 +51,7 @@ const teamMembers = [
     portfolio: "https://www.instagram.com/_.inderpreet_singh._/",
     personImage: inderpreet, // Adjust image path accordingly
   },
-  
+
   {
     name: "Saksham Kohli",
     description: "Researcher",
@@ -58,6 +59,14 @@ const teamMembers = [
     github: "https://github.com/sakshamk007",
     portfolio: "https://twitter.com/Sakshamk007",
     personImage: Saksham, // Adjust image path accordingly
+  },
+  {
+    name: "Tashneet Kaur",
+    description: "Content Creator",
+    linkedin: "https://www.linkedin.com/in/tashneetkaur343/",
+    github: "https://github.com/Tashneet-30",
+    portfolio: "https://www.youtube.com/@tashneetkaur30",
+    personImage: Tashneet, // Adjust image path accordingly
   },
   // Add more team members as needed
 ];
