@@ -8,7 +8,9 @@ export default function App() {
   return (
     <div id="EventSection" className="flex w-full flex-col">
       <div className="bg-[#1f2937] p-4 flex justify-center">
-        <h1 className="text-yellow text-3xl font-bold">App Registration Guide</h1>
+        <h1 className="text-yellow text-3xl font-bold">
+          App Registration Guide
+        </h1>
       </div>
       <Tabs
         className="m-auto w-full text-white justify-center p-2"
@@ -16,7 +18,6 @@ export default function App() {
         color="warning"
       >
         <Tab
-        
           className=""
           key="How to Register"
           title={
@@ -57,8 +58,8 @@ export default function App() {
             <CardBody className="p-3">
               <iframe
                 height="280"
-                src="https://www.youtube.com/embed/Geu4QZLzKp0"
-                title="How to Register on GNDEC ATHLETIX App | GNDEC SPORTS"
+                src="https://www.youtube.com/embed/-W2LIjWljJ0"
+                title="How to Register on GNDEC ATHLETIX App | GNDEC SPORTS (In Punjabi)"
                 className="w-[95%] m-auto  rounded-2xl"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
