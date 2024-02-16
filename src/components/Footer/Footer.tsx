@@ -47,8 +47,8 @@ export const Footer = ({setSelectedCard}:any) => {
             <Button
               className="text-white w-[80vw] max-w-[240px]"
               variant="bordered"
-              onClick={()=>{document.getElementById('body')?.scrollIntoView({behavior:'smooth', block:'center'})}}
-              // onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
+              // onClick={()=>{document.getElementById('body')?.scrollIntoView({behavior:'smooth', block:'center'})}}
+              onClick={()=>{window.open("https://github.com/sangam2109/Sports-landing-page/releases/download/app/GNDEC.Athletix.apk")}}
             >
               <img width={45} src={ALogo} alt="" />
               Android
@@ -58,8 +58,8 @@ export const Footer = ({setSelectedCard}:any) => {
               className="w-[80vw] max-w-[240px]"
               variant="shadow"
               color="primary"
-              // onClick={()=>{window.open("https://www.gndecathletix.games")}}
-              onClick={()=>{document.getElementById('body')?.scrollIntoView({behavior:'smooth', block:'center'})}}
+              onClick={()=>{window.open("https://www.gndecathletix.games")}}
+              // onClick={()=>{document.getElementById('body')?.scrollIntoView({behavior:'smooth', block:'center'})}}
             >
               <FaApple size={21} />
               IOS
