@@ -43,7 +43,7 @@ const Time = () => {
       flipCard.appendChild(bottomFlip);
     };
 
-    const launchDate = new Date("February 07, 2025 15:00:00").getTime();
+    const launchDate = new Date("2025-02-07T12:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();

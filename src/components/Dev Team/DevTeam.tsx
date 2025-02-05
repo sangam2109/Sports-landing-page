@@ -14,6 +14,7 @@ import Rajveer from "../../assets/rajveer.png";
 import inderpreet from "../../assets/inderpreet.jpg";
 import Saksham from "../../assets/Saksham.jpg"
 import Tashneet from "../../assets/tashneet.jpg"
+import Keshav from "../../assets/Keshav1.jpg"
 import "./DevTeam.css";
 
 // Sample data for team members
@@ -42,6 +43,14 @@ const teamMembers = [
     github: "https://github.com/sangam2109",
     portfolio: "https://sangamportfolio.vercel.app",
     personImage: Sangam, // Adjust image path accordingly
+  },
+  {
+    name: "Keshav Garg",
+    description: "Full Stack Developer",
+    linkedin: "https://www.linkedin.com/in/keshav-garg-092748213/",
+    github: "https://github.com/binaryfetch",
+    portfolio: "https://www.instagram.com/keshav.garg_22/",
+    personImage: Keshav, // Adjust image path accordingly
   },
   {
     name: "Inderpreet Singh",

@@ -5,7 +5,7 @@ import { Button } from "@nextui-org/react";
 const galleryImage = {
   src: "src/assets/gallery.png", // Replace with actual gallery screenshot
   alt: "Athletic Meet Gallery",
-  link: "https://www.gndecathletix.games/gallery",
+  link: "https://gallery.gndecathletix.games",
 };
 
 const Gallery: React.FC = () => {

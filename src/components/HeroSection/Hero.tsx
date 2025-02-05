@@ -5,7 +5,7 @@ import Android from "../../assets/iphones.png";
 import ALogo from "../../assets/android-logo.png";
 import { FaApple } from "react-icons/fa";
 
-const TARGET_DATE = new Date("2025-02-07T00:00:00").getTime();
+const TARGET_DATE = new Date("2025-02-07T12:00:00").getTime();
 
 const Hero: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(TARGET_DATE - new Date().getTime());

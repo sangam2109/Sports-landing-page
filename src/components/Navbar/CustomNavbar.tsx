@@ -84,7 +84,7 @@ const CustomNavbar = ({setSelectedCard}:any) => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link className="text-inherit" href="#">
+            <Link className="text-inherit" href="https://gallery.gndecathletix.games">
               Gallery
             </Link>
           </NavbarItem>
