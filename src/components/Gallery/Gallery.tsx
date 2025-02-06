@@ -3,7 +3,7 @@ import { Image } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 
 const galleryImage = {
-  src: "src/assets/gallery.png", // Replace with actual gallery screenshot
+  src: "/gallery.png", // Replace with actual gallery screenshot
   alt: "Athletic Meet Gallery",
   link: "https://gallery.gndecathletix.games",
 };
