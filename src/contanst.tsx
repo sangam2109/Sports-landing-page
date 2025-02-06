@@ -132,7 +132,7 @@ export const RegisterSteps = {
       content: (
         <>
           If you don't have college email id then go to{" "}
-          <a className="text-primary" target="_blank" href="https://forms.gle/sa4sEssnonS95bPy6">
+          <a className="text-primary" target="_blank" href="https://forms.gle/JAmGiN9SCpJZARN66">
             Help Section
           </a>
           and Fill the Form.
@@ -187,7 +187,7 @@ export const NavItems = {
     {
       key: "5",
       heading: "Contact Us",
-      href:"https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit"
+      href:"https://forms.gle/JAmGiN9SCpJZARN66"
     },
   ],
 };

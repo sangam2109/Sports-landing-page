@@ -69,7 +69,7 @@ export const Footer = ({ setSelectedCard }: any) => {
             <a href="#DevTeam">
               <li>Dev Team</li>
             </a>
-            <a href="https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit">
+            <a href="https://forms.gle/JAmGiN9SCpJZARN66">
               <li>Contact Us</li>
             </a>
             <a href="https://gallery.gndecathletix.games">

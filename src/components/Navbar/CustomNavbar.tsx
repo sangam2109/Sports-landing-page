@@ -79,7 +79,7 @@ const CustomNavbar = ({setSelectedCard}:any) => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" className="text-inherit" href="https://docs.google.com/forms/d/1_Iwr8IrmGebCCm94TL-mWa3H4MjsUPdswBs5sGd-KZ0/edit">
+            <Link color="foreground" className="text-inherit" href="https://forms.gle/JAmGiN9SCpJZARN66">
               Contact Us
             </Link>
           </NavbarItem>

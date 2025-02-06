@@ -45,14 +45,6 @@ const teamMembers = [
     personImage: Sangam, // Adjust image path accordingly
   },
   {
-    name: "Keshav Garg",
-    description: "Full Stack Developer",
-    linkedin: "https://www.linkedin.com/in/keshav-garg-092748213/",
-    github: "https://github.com/binaryfetch",
-    portfolio: "https://www.instagram.com/keshav.garg_22/",
-    personImage: Keshav, // Adjust image path accordingly
-  },
-  {
     name: "Inderpreet Singh",
     description: "UI/UX Developer",
     linkedin: "https://www.linkedin.com/in/inderpreet-singh13/",
@@ -76,6 +68,14 @@ const teamMembers = [
     github: "https://github.com/Tashneet-30",
     portfolio: "https://www.youtube.com/@tashneetkaur30",
     personImage: Tashneet, // Adjust image path accordingly
+  },
+  {
+    name: "Keshav Garg",
+    description: "Full Stack Developer",
+    linkedin: "https://www.linkedin.com/in/keshav-garg-092748213/",
+    github: "https://github.com/binaryfetch",
+    portfolio: "https://www.instagram.com/keshav.garg_22/",
+    personImage: Keshav, // Adjust image path accordingly
   },
   // Add more team members as needed
 ];
