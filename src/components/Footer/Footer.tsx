@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@nextui-org/react";
 import { FaApple } from "react-icons/fa";
 import ALogo from "../../assets/android-logo.png";
